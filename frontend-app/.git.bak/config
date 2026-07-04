@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "frontend"]
+	url = https://github.com/reyfuu/front-end-learning-platform.git
+	fetch = +refs/heads/*:refs/remotes/frontend/*
