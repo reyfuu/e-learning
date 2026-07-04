@@ -1,0 +1,3 @@
+# ignore embedded git backups
+backend/.git.bak/
+frontend-app/.git.bak/
