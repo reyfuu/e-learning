@@ -1,16 +1,22 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8080";
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL ??
+  (process.env.NODE_ENV === "development" ? "http://localhost:8080" : "");
+export const apiConfigurationError = API_URL
+  ? ""
+  : "Backend API belum dikonfigurasi untuk deployment ini.";
 
 export const api = axios.create({
-  baseURL: `${API_URL}/api/v1`,
+  baseURL: API_URL ? `${API_URL}/api/v1` : undefined,
   headers: { "Content-Type": "application/json" },
   timeout: 15000,
 });
 
 // Attach access token on every request
 api.interceptors.request.use((config) => {
+  if (!API_URL) return Promise.reject(new Error(apiConfigurationError));
   const token = Cookies.get("access_token");
   if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;

@@ -20,3 +20,5 @@ apps/api/.env
 # Graphify generated working output and cache
 graphify-out/
 .planning/cache/
+.gstack/
+.gstack/

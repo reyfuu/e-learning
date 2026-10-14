@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuthStore } from "@/store/auth";
-import { authApi } from "@/lib/api";
+import { apiConfigurationError, authApi } from "@/lib/api";
 import { GraduationCap, ArrowRight, Mail, Lock, Loader2 } from "lucide-react";
 
 export default function LoginPage() {
@@ -31,7 +31,7 @@ export default function LoginPage() {
           ? // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (err as any).response?.data?.message
           : undefined;
-      setError(message || "Invalid email or password");
+      setError(apiConfigurationError || message || "Invalid email or password");
     } finally {
       setLoading(false);
     }

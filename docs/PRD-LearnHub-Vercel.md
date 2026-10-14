@@ -113,6 +113,7 @@ Topik berikut adalah cetak biru kurikulum. Setiap butir menjadi rangkaian lesson
 | Docker | images, containers, Dockerfile, volumes, ports, Compose dan registries | multi-stage/hardened builds, networking, secrets, SBOM/scanning, optimization, orchestration readiness dan CI |
 | Kubernetes | pods, deployments, services, config/secrets, probes, namespaces | RBAC, ingress/network policy, autoscaling, storage, rollout, observability, security, operators dan recovery |
 | Terraform | providers, resources, variables, outputs, state, modules dasar | remote state/locking, modules, imports/refactors, workspaces, policy, secrets, drift, testing dan multi-environment design |
+| Nginx | reverse proxy, server blocks, lokasi dan static files, konfigurasi dasar, DNS/port, log akses dan error | TLS/HTTPS, load balancing, caching, rate limiting, header keamanan, upstream health, zero-downtime reload, observability dan hardening |
 
 ### F. CI/CD, QA, dan kolaborasi
 

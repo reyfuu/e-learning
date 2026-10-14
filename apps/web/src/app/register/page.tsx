@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuthStore } from "@/store/auth";
-import { authApi } from "@/lib/api";
+import { apiConfigurationError, authApi } from "@/lib/api";
 import { GraduationCap, ArrowRight, Mail, Lock, Loader2, User, BookOpen, Briefcase } from "lucide-react";
 
 export default function RegisterPage() {
@@ -33,7 +33,7 @@ export default function RegisterPage() {
           ? // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (err as any).response?.data?.message
           : undefined;
-      setError(message || "Registration failed. Please try again.");
+      setError(apiConfigurationError || message || "Registration failed. Please try again.");
     } finally {
       setLoading(false);
     }
