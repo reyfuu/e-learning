@@ -1,21 +1,21 @@
 # Graph Report - learn-2  (2026-10-15)
 
 ## Corpus Check
-- 77 files · ~131,507 words
+- 78 files · ~134,441 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 629 nodes · 848 edges · 42 communities (35 shown, 7 thin omitted)
+- 645 nodes · 864 edges · 47 communities (40 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `37a87535`
+- Built from commit: `12832990`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- context.Context
+- gorm.io/gorm.DB
 - useAuthStore
 - BRD — LearnHub
 - 📚 Product Requirements Document (PRD)
@@ -26,9 +26,9 @@
 - User
 - devDependencies
 - cn
-- AuthHandler
-- PRD — LearnHub: Katalog Silabus Teknologi
 - main
+- PRD — LearnHub: Katalog Silabus Teknologi
+- PracticeService
 - CourseHandler
 - scripts
 - web/README.md
@@ -44,7 +44,7 @@
 - RTK.md
 - setup-postgres.sh
 - learn-platform/backend
-- Communities (41 total, 7 thin omitted)
+- Communities (42 total, 7 thin omitted)
 - TRD — LearnHub
 - 🔒 Security Features
 - 🔑 API Endpoints
@@ -55,9 +55,14 @@
 - 🚀 Deployment
 - 🚀 Quick Start
 - CourseService
+- context.Context
+- Materi: Nginx untuk Reverse Proxy dan Deployment Web
+- index.ts
+- Enrollment
+- Transaction
 
 ## God Nodes (most connected - your core abstractions)
-1. `Communities (41 total, 7 thin omitted)` - 33 edges
+1. `Communities (42 total, 7 thin omitted)` - 34 edges
 2. `CourseRepository` - 24 edges
 3. `Course` - 17 edges
 4. `Learn Platform Backend` - 17 edges
@@ -69,29 +74,29 @@
 10. `main()` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `AuthHandler` --references--> `AuthService`  [EXTRACTED]
-  apps/api/internal/handler/auth_handler.go → apps/api/internal/service/auth_service.go
-- `NewAuthHandler()` --references--> `AuthService`  [EXTRACTED]
-  apps/api/internal/handler/auth_handler.go → apps/api/internal/service/auth_service.go
-- `main()` --calls--> `NewAuthHandler()`  [EXTRACTED]
-  apps/api/main.go → apps/api/internal/handler/auth_handler.go
 - `CourseHandler` --references--> `CourseService`  [EXTRACTED]
   apps/api/internal/handler/course_handler.go → apps/api/internal/service/course_service.go
 - `NewCourseHandler()` --references--> `CourseService`  [EXTRACTED]
   apps/api/internal/handler/course_handler.go → apps/api/internal/service/course_service.go
+- `main()` --calls--> `NewCourseHandler()`  [EXTRACTED]
+  apps/api/main.go → apps/api/internal/handler/course_handler.go
+- `main()` --calls--> `NewPracticeHandler()`  [EXTRACTED]
+  apps/api/main.go → apps/api/internal/handler/practice_handler.go
+- `UserHandler` --references--> `UserService`  [EXTRACTED]
+  apps/api/internal/handler/user_handler.go → apps/api/internal/service/user_service.go
 
 ## Import Cycles
 - None detected.
 
-## Communities (42 total, 7 thin omitted)
+## Communities (47 total, 7 thin omitted)
 
-### Community 0 - "context.Context"
-Cohesion: 0.06
-Nodes (28): Course, User, Course, User, Course, Enrollment, User, Lesson (+20 more)
+### Community 0 - "gorm.io/gorm.DB"
+Cohesion: 0.09
+Nodes (15): Course, User, Lesson, LessonProgress, User, Course, User, Section (+7 more)
 
 ### Community 1 - "useAuthStore"
-Cohesion: 0.06
-Nodes (33): AdminDashboard(), Course, Course, CourseDetailPage(), Module, AddCoursePage(), CoursesPage(), DashboardPage() (+25 more)
+Cohesion: 0.10
+Nodes (22): AdminDashboard(), Course, Course, CourseDetailPage(), Module, AddCoursePage(), CoursesPage(), DashboardPage() (+14 more)
 
 ### Community 2 - "BRD — LearnHub"
 Cohesion: 0.07
@@ -118,8 +123,8 @@ Cohesion: 0.07
 Nodes (28): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+20 more)
 
 ### Community 8 - "User"
-Cohesion: 0.08
-Nodes (15): AuthResponse, Claims, LoginRequest, RegisterRequest, UpdateUserRequest, User, UserRepository, NewUserRepository() (+7 more)
+Cohesion: 0.14
+Nodes (8): UpdateUserRequest, User, UserRepository, NewUserRepository(), UserService, NewUserService(), CreateUserRequest, UserResponse
 
 ### Community 9 - "devDependencies"
 Cohesion: 0.08
@@ -129,17 +134,17 @@ Nodes (25): devDependencies, eslint, eslint-config-next, tailwindcss, @tailwindc
 Cohesion: 0.12
 Nodes (15): Sidebar(), SidebarProps, Button, ButtonProps, Badge(), BadgeProps, Card(), CardProps (+7 more)
 
-### Community 11 - "AuthHandler"
-Cohesion: 0.31
-Nodes (4): echo.Context, NewAuthHandler(), echo.HandlerFunc, AuthHandler
+### Community 11 - "main"
+Cohesion: 0.09
+Nodes (18): getEnv(), Load(), echo.Context, NewAuthHandler(), AuthResponse, Claims, LoginRequest, RegisterRequest (+10 more)
 
 ### Community 12 - "PRD — LearnHub: Katalog Silabus Teknologi"
 Cohesion: 0.08
 Nodes (24): 10. Kriteria penerimaan rilis awal, 11. Ketergantungan dan keputusan yang masih perlu ditetapkan, 1. Visi dan ringkasan produk, 2. Sasaran dan bukan sasaran, 3. Persona dan kebutuhan, 4. Taksonomi dan pola silabus, 5. Katalog silabus, 6. Persyaratan produk dan UX (+16 more)
 
-### Community 13 - "main"
-Cohesion: 0.10
-Nodes (16): getEnv(), Load(), echo.Context, NewPracticeHandler(), firstNonEmpty(), PracticeService, NewPracticeService(), statusMessage() (+8 more)
+### Community 13 - "PracticeService"
+Cohesion: 0.15
+Nodes (11): echo.Context, NewPracticeHandler(), firstNonEmpty(), PracticeService, NewPracticeService(), statusMessage(), net/http.Client, PracticeHandler (+3 more)
 
 ### Community 14 - "CourseHandler"
 Cohesion: 0.27
@@ -173,9 +178,9 @@ Nodes (3): inter, metadata, Providers()
 Cohesion: 0.33
 Nodes (5): Instalasi dan development, Prasyarat, Setup LearnHub, Struktur, Vercel
 
-### Community 31 - "Communities (41 total, 7 thin omitted)"
-Cohesion: 0.05
-Nodes (43): Communities (41 total, 7 thin omitted), Community 0 - "context.Context", Community 10 - "cn", Community 11 - "AuthService", Community 12 - "PRD — LearnHub: Katalog Silabus Teknologi", Community 13 - "PracticeService", Community 14 - "CourseHandler", Community 15 - "scripts" (+35 more)
+### Community 31 - "Communities (42 total, 7 thin omitted)"
+Cohesion: 0.04
+Nodes (44): Communities (42 total, 7 thin omitted), Community 0 - "context.Context", Community 10 - "cn", Community 11 - "AuthHandler", Community 12 - "PRD — LearnHub: Katalog Silabus Teknologi", Community 13 - "main", Community 14 - "CourseHandler", Community 15 - "scripts" (+36 more)
 
 ### Community 32 - "TRD — LearnHub"
 Cohesion: 0.13
@@ -217,8 +222,28 @@ Nodes (3): Installation, Prerequisites, 🚀 Quick Start
 Cohesion: 0.20
 Nodes (8): CourseResponse, CreateCourseRequest, CreateModuleRequest, ModuleResponse, UpdateCourseStatusRequest, CourseService, NewCourseService(), slugify()
 
+### Community 42 - "context.Context"
+Cohesion: 0.16
+Nodes (5): Course, User, CourseRepository, NewCourseRepository(), context.Context
+
+### Community 43 - "Materi: Nginx untuk Reverse Proxy dan Deployment Web"
+Cohesion: 0.14
+Nodes (14): 1. Dasar: apa yang dilakukan Nginx?, 2. Praktik dasar: teruskan request ke aplikasi, 3. File statis dan pemilihan path, 4. Praktik kerja: diagnosis `502 Bad Gateway`, 5. Lanjutan: HTTPS, load balancing, dan hardening, Langkah diagnosis, Lima hint bertahap, Materi: Nginx untuk Reverse Proxy dan Deployment Web (+6 more)
+
+### Community 44 - "index.ts"
+Cohesion: 0.15
+Nodes (11): ApiError, ApiResponse, AuthResponse, Course, COURSE_ICONS, CreateCourseRequest, CreateModuleRequest, LoginRequest (+3 more)
+
+### Community 45 - "Enrollment"
+Cohesion: 0.40
+Nodes (3): Course, Enrollment, User
+
+### Community 46 - "Transaction"
+Cohesion: 0.40
+Nodes (3): Course, User, Transaction
+
 ## Knowledge Gaps
-- **290 isolated node(s):** `learn-platform/backend`, `RefreshTokenRequest`, `CreateUserRequest`, `runnerResult`, `eslintConfig` (+285 more)
+- **303 isolated node(s):** `learn-platform/backend`, `RefreshTokenRequest`, `CreateUserRequest`, `runnerResult`, `eslintConfig` (+298 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -226,16 +251,16 @@ Nodes (8): CourseResponse, CreateCourseRequest, CreateModuleRequest, ModuleRespo
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `📚 Product Requirements Document (PRD)` connect `📚 Product Requirements Document (PRD)` to `BRD — LearnHub`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Why does `main()` connect `main` to `context.Context`, `UserHandler`, `User`, `CourseService`, `AuthHandler`, `CourseHandler`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `main()` connect `main` to `UserHandler`, `User`, `CourseService`, `context.Context`, `PracticeService`, `CourseHandler`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `PRD — LearnHub: Katalog Silabus Teknologi` connect `PRD — LearnHub: Katalog Silabus Teknologi` to `BRD — LearnHub`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `learn-platform/backend`, `RefreshTokenRequest`, `CreateUserRequest` to the rest of the system?**
-  _290 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `context.Context` be split into smaller, more focused modules?**
-  _Cohesion score 0.0574400723654455 - nodes in this community are weakly interconnected._
+  _303 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `gorm.io/gorm.DB` be split into smaller, more focused modules?**
+  _Cohesion score 0.09425287356321839 - nodes in this community are weakly interconnected._
 - **Should `useAuthStore` be split into smaller, more focused modules?**
-  _Cohesion score 0.06448979591836734 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09759759759759759 - nodes in this community are weakly interconnected._
 - **Should `BRD — LearnHub` be split into smaller, more focused modules?**
-  _Cohesion score 0.07389162561576355 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07126436781609195 - nodes in this community are weakly interconnected._

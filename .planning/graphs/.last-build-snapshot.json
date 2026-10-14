@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": "2026-10-14T20:02:42.164Z",
+  "timestamp": "2026-10-14T20:07:27.743Z",
   "nodes": [
     {
       "label": "Course",
@@ -79,136 +79,6 @@
       "community": 1,
       "community_name": "useAuthStore",
       "norm_label": "authstate"
-    },
-    {
-      "label": "ApiError",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L75",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_apierror",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "apierror"
-    },
-    {
-      "label": "ApiResponse",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L70",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_apiresponse",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "apiresponse"
-    },
-    {
-      "label": "AuthResponse",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L12",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_authresponse",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "authresponse"
-    },
-    {
-      "label": "Course",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L40",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_course",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "course"
-    },
-    {
-      "label": "CreateCourseRequest",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L55",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_createcourserequest",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "createcourserequest"
-    },
-    {
-      "label": "CreateModuleRequest",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L61",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_createmodulerequest",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "createmodulerequest"
-    },
-    {
-      "label": "LoginRequest",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L19",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_loginrequest",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "loginrequest"
-    },
-    {
-      "label": "Module",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L31",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_module",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "module"
-    },
-    {
-      "label": "RegisterRequest",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L24",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_registerrequest",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "registerrequest"
-    },
-    {
-      "label": "UpdateCourseStatusRequest",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L66",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_updatecoursestatusrequest",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "updatecoursestatusrequest"
     },
     {
       "label": "User",
@@ -300,6 +170,136 @@
       "community": 10,
       "community_name": "cn",
       "norm_label": "inputprops"
+    },
+    {
+      "label": "ApiError",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L75",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_apierror",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "apierror"
+    },
+    {
+      "label": "ApiResponse",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L70",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_apiresponse",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "apiresponse"
+    },
+    {
+      "label": "AuthResponse",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L12",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_authresponse",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "authresponse"
+    },
+    {
+      "label": "Course",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L40",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_course",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "course"
+    },
+    {
+      "label": "CreateCourseRequest",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L55",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_createcourserequest",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "createcourserequest"
+    },
+    {
+      "label": "CreateModuleRequest",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L61",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_createmodulerequest",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "createmodulerequest"
+    },
+    {
+      "label": "LoginRequest",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L19",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_loginrequest",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "loginrequest"
+    },
+    {
+      "label": "Module",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L31",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_module",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "module"
+    },
+    {
+      "label": "RegisterRequest",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L24",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_registerrequest",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "registerrequest"
+    },
+    {
+      "label": "UpdateCourseStatusRequest",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L66",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_updatecoursestatusrequest",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "updatecoursestatusrequest"
     },
     {
       "label": "AdminDashboard()",
@@ -432,18 +432,6 @@
       "community": 1,
       "community_name": "useAuthStore",
       "norm_label": "learnerdashboard()"
-    },
-    {
-      "label": "getIconEmoji()",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L93",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_geticonemoji",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "geticonemoji()"
     },
     {
       "label": "DashboardLayout()",
@@ -626,6 +614,18 @@
       "norm_label": "home()"
     },
     {
+      "label": "getIconEmoji()",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L93",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_geticonemoji",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "geticonemoji()"
+    },
+    {
       "label": "category.go",
       "file_type": "code",
       "source_file": "apps/api/internal/model/category.go",
@@ -633,7 +633,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_category",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "category.go"
     },
     {
@@ -644,7 +644,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_certificate",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "certificate.go"
     },
     {
@@ -655,7 +655,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_certificate_go_course",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "course"
     },
     {
@@ -666,73 +666,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_certificate_go_user",
       "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "user"
-    },
-    {
-      "label": "Course",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/course.go",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_course_go_model_course",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "course"
-    },
-    {
-      "label": "User",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_course_go_user",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "user"
-    },
-    {
-      "label": "enrollment.go",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/enrollment.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_enrollment",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "enrollment.go"
-    },
-    {
-      "label": "Course",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_enrollment_go_course",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "course"
-    },
-    {
-      "label": "Enrollment",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/enrollment.go",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_enrollment_go_model_enrollment",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "enrollment"
-    },
-    {
-      "label": "User",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_enrollment_go_user",
-      "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "user"
     },
     {
@@ -743,7 +677,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_lesson",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "lesson.go"
     },
     {
@@ -754,7 +688,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_lesson_go_model_lesson",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "lesson"
     },
     {
@@ -765,7 +699,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_lesson_progress",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "lesson_progress.go"
     },
     {
@@ -776,7 +710,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_lesson_progress_go_model_lessonprogress",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "lessonprogress"
     },
     {
@@ -787,7 +721,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_lesson_progress_go_user",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "user"
     },
     {
@@ -798,7 +732,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_practice",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "practice.go"
     },
     {
@@ -809,7 +743,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_review",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "review.go"
     },
     {
@@ -820,7 +754,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_review_go_course",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "course"
     },
     {
@@ -831,7 +765,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_review_go_user",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "user"
     },
     {
@@ -842,7 +776,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_section",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "section.go"
     },
     {
@@ -853,118 +787,8 @@
       "_origin": "ast",
       "id": "apps_api_internal_model_section_go_model_section",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "section"
-    },
-    {
-      "label": "transaction.go",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/transaction.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_transaction",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "transaction.go"
-    },
-    {
-      "label": "Course",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_transaction_go_course",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "course"
-    },
-    {
-      "label": "User",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_transaction_go_user",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "user"
-    },
-    {
-      "label": "auth_repository.go",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/auth_repository.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_internal_repository_auth_repository",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "auth_repository.go"
-    },
-    {
-      "label": "AuthRepository",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/auth_repository.go",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "apps_api_internal_repository_auth_repository_go_repository_authrepository",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "authrepository"
-    },
-    {
-      "label": "NewAuthRepository()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/auth_repository.go",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "apps_api_internal_repository_auth_repository_newauthrepository",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "newauthrepository()"
-    },
-    {
-      "label": "course_repository.go",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_internal_repository_course_repository",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "course_repository.go"
-    },
-    {
-      "label": "CourseRepository",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "apps_api_internal_repository_course_repository_go_repository_courserepository",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "courserepository"
-    },
-    {
-      "label": "NewCourseRepository()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "apps_api_internal_repository_course_repository_newcourserepository",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "newcourserepository()"
-    },
-    {
-      "label": "context.Context",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "go_type_context_context",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "context.context"
     },
     {
       "label": "gorm.io/gorm.DB",
@@ -974,7 +798,7 @@
       "_origin": "ast",
       "id": "go_type_gorm_io_gorm_db",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "gorm.io/gorm.db"
     },
     {
@@ -985,7 +809,7 @@
       "_origin": "ast",
       "id": "go_type_gorm_io_gorm_deletedat",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "gorm.io/gorm.deletedat"
     },
     {
@@ -996,7 +820,7 @@
       "_origin": "ast",
       "id": "go_type_time_time",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "time.time"
     },
     {
@@ -1007,7 +831,7 @@
       "_origin": "ast",
       "id": "model_category",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "category"
     },
     {
@@ -1018,7 +842,7 @@
       "_origin": "ast",
       "id": "model_category_beforecreate",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": ".beforecreate()"
     },
     {
@@ -1029,7 +853,7 @@
       "_origin": "ast",
       "id": "model_certificate",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "certificate"
     },
     {
@@ -1040,7 +864,7 @@
       "_origin": "ast",
       "id": "model_certificate_beforecreate",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": ".beforecreate()"
     },
     {
@@ -1051,18 +875,7 @@
       "_origin": "ast",
       "id": "model_course_beforecreate",
       "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".beforecreate()"
-    },
-    {
-      "label": ".BeforeCreate()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/enrollment.go",
-      "source_location": "L25",
-      "_origin": "ast",
-      "id": "model_enrollment_beforecreate",
-      "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": ".beforecreate()"
     },
     {
@@ -1073,7 +886,7 @@
       "_origin": "ast",
       "id": "model_lesson_beforecreate",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": ".beforecreate()"
     },
     {
@@ -1084,7 +897,7 @@
       "_origin": "ast",
       "id": "model_lessonprogress_beforecreate",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": ".beforecreate()"
     },
     {
@@ -1095,7 +908,7 @@
       "_origin": "ast",
       "id": "model_practiceprogress",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "practiceprogress"
     },
     {
@@ -1106,7 +919,7 @@
       "_origin": "ast",
       "id": "model_review",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": "review"
     },
     {
@@ -1117,7 +930,7 @@
       "_origin": "ast",
       "id": "model_review_beforecreate",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": ".beforecreate()"
     },
     {
@@ -1128,239 +941,19 @@
       "_origin": "ast",
       "id": "model_section_beforecreate",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": ".beforecreate()"
-    },
-    {
-      "label": "Transaction",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/transaction.go",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "model_transaction",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": "transaction"
     },
     {
       "label": ".BeforeCreate()",
       "file_type": "code",
-      "source_file": "apps/api/internal/model/transaction.go",
-      "source_location": "L29",
+      "source_file": "apps/api/internal/model/user.go",
+      "source_location": "L24",
       "_origin": "ast",
-      "id": "model_transaction_beforecreate",
+      "id": "model_user_beforecreate",
       "community": 0,
-      "community_name": "context.Context",
+      "community_name": "gorm.io/gorm.DB",
       "norm_label": ".beforecreate()"
-    },
-    {
-      "label": ".CountLessonsBySectionID()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L119",
-      "_origin": "ast",
-      "id": "repository_courserepository_countlessonsbysectionid",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".countlessonsbysectionid()"
-    },
-    {
-      "label": ".CreateCourse()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "repository_courserepository_createcourse",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".createcourse()"
-    },
-    {
-      "label": ".CreateLesson()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L74",
-      "_origin": "ast",
-      "id": "repository_courserepository_createlesson",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".createlesson()"
-    },
-    {
-      "label": ".CreateSection()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L61",
-      "_origin": "ast",
-      "id": "repository_courserepository_createsection",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".createsection()"
-    },
-    {
-      "label": ".EnrollUser()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L170",
-      "_origin": "ast",
-      "id": "repository_courserepository_enrolluser",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".enrolluser()"
-    },
-    {
-      "label": ".GetAllPublishedCourses()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L137",
-      "_origin": "ast",
-      "id": "repository_courserepository_getallpublishedcourses",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getallpublishedcourses()"
-    },
-    {
-      "label": ".GetCourseByID()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "repository_courserepository_getcoursebyid",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getcoursebyid()"
-    },
-    {
-      "label": ".GetCourseByIDPublic()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L152",
-      "_origin": "ast",
-      "id": "repository_courserepository_getcoursebyidpublic",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getcoursebyidpublic()"
-    },
-    {
-      "label": ".GetCoursesByUserID()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "repository_courserepository_getcoursesbyuserid",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getcoursesbyuserid()"
-    },
-    {
-      "label": ".GetEnrolledCourses()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L184",
-      "_origin": "ast",
-      "id": "repository_courserepository_getenrolledcourses",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getenrolledcourses()"
-    },
-    {
-      "label": ".GetLessonByID()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L78",
-      "_origin": "ast",
-      "id": "repository_courserepository_getlessonbyid",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getlessonbyid()"
-    },
-    {
-      "label": ".GetLessonProgress()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L93",
-      "_origin": "ast",
-      "id": "repository_courserepository_getlessonprogress",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getlessonprogress()"
-    },
-    {
-      "label": ".GetSectionByID()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L127",
-      "_origin": "ast",
-      "id": "repository_courserepository_getsectionbyid",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getsectionbyid()"
-    },
-    {
-      "label": ".GetSectionsByCourseID()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L65",
-      "_origin": "ast",
-      "id": "repository_courserepository_getsectionsbycourseid",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getsectionsbycourseid()"
-    },
-    {
-      "label": ".GetUserLessonProgresses()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L111",
-      "_origin": "ast",
-      "id": "repository_courserepository_getuserlessonprogresses",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".getuserlessonprogresses()"
-    },
-    {
-      "label": ".IsEnrolled()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L175",
-      "_origin": "ast",
-      "id": "repository_courserepository_isenrolled",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".isenrolled()"
-    },
-    {
-      "label": ".SaveLessonProgress()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L107",
-      "_origin": "ast",
-      "id": "repository_courserepository_savelessonprogress",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".savelessonprogress()"
-    },
-    {
-      "label": ".UpdateCourse()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "repository_courserepository_updatecourse",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".updatecourse()"
-    },
-    {
-      "label": ".UpdateLesson()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/repository/course_repository.go",
-      "source_location": "L87",
-      "_origin": "ast",
-      "id": "repository_courserepository_updatelesson",
-      "community": 0,
-      "community_name": "context.Context",
-      "norm_label": ".updatelesson()"
     },
     {
       "label": "admin/dashboard/page.tsx",
@@ -1572,28 +1165,6 @@
       "norm_label": "useauthstore"
     },
     {
-      "label": "index.ts",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_web_src_types_index",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "index.ts"
-    },
-    {
-      "label": "COURSE_ICONS",
-      "file_type": "code",
-      "source_file": "apps/web/src/types/index.ts",
-      "source_location": "L80",
-      "_origin": "ast",
-      "id": "apps_web_src_types_index_course_icons",
-      "community": 1,
-      "community_name": "useAuthStore",
-      "norm_label": "course_icons"
-    },
-    {
       "label": "dashboard/layout.tsx",
       "file_type": "code",
       "source_file": "apps/web/src/app/dashboard/layout.tsx",
@@ -1682,6 +1253,39 @@
       "norm_label": "utils.ts"
     },
     {
+      "label": "config.go",
+      "file_type": "code",
+      "source_file": "apps/api/internal/config/config.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_internal_config_config",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "config.go"
+    },
+    {
+      "label": "getEnv()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/config/config.go",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "apps_api_internal_config_config_getenv",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "getenv()"
+    },
+    {
+      "label": "Load()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/config/config.go",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "apps_api_internal_config_config_load",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "load()"
+    },
+    {
       "label": "auth_handler.go",
       "file_type": "code",
       "source_file": "apps/api/internal/handler/auth_handler.go",
@@ -1689,7 +1293,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_handler_auth_handler",
       "community": 11,
-      "community_name": "AuthHandler",
+      "community_name": "main",
       "norm_label": "auth_handler.go"
     },
     {
@@ -1700,7 +1304,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_handler_auth_handler_go_echo_context",
       "community": 11,
-      "community_name": "AuthHandler",
+      "community_name": "main",
       "norm_label": "echo.context"
     },
     {
@@ -1711,8 +1315,195 @@
       "_origin": "ast",
       "id": "apps_api_internal_handler_auth_handler_newauthhandler",
       "community": 11,
-      "community_name": "AuthHandler",
+      "community_name": "main",
       "norm_label": "newauthhandler()"
+    },
+    {
+      "label": "auth.go",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/auth.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_auth",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "auth.go"
+    },
+    {
+      "label": "AuthResponse",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/auth.go",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_auth_go_model_authresponse",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "authresponse"
+    },
+    {
+      "label": "Claims",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/auth.go",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_auth_go_model_claims",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "claims"
+    },
+    {
+      "label": "LoginRequest",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/auth.go",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_auth_go_model_loginrequest",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "loginrequest"
+    },
+    {
+      "label": "RegisterRequest",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/auth.go",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_auth_go_model_registerrequest",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "registerrequest"
+    },
+    {
+      "label": "auth_repository.go",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/auth_repository.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_internal_repository_auth_repository",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "auth_repository.go"
+    },
+    {
+      "label": "AuthRepository",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/auth_repository.go",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "apps_api_internal_repository_auth_repository_go_repository_authrepository",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "authrepository"
+    },
+    {
+      "label": "NewAuthRepository()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/auth_repository.go",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "apps_api_internal_repository_auth_repository_newauthrepository",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "newauthrepository()"
+    },
+    {
+      "label": "auth_service.go",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_internal_service_auth_service",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "auth_service.go"
+    },
+    {
+      "label": "AuthService",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "apps_api_internal_service_auth_service_go_service_authservice",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "authservice"
+    },
+    {
+      "label": "NewAuthService()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "apps_api_internal_service_auth_service_newauthservice",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "newauthservice()"
+    },
+    {
+      "label": "main.go",
+      "file_type": "code",
+      "source_file": "apps/api/main.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_main",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "main.go"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "apps/api/main.go",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "apps_api_main_init",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "init()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "apps/api/main.go",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "apps_api_main_main",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "main()"
+    },
+    {
+      "label": "database.go",
+      "file_type": "code",
+      "source_file": "apps/api/pkg/database/database.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_pkg_database_database",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "database.go"
+    },
+    {
+      "label": "New()",
+      "file_type": "code",
+      "source_file": "apps/api/pkg/database/database.go",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "apps_api_pkg_database_database_new",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "new()"
+    },
+    {
+      "label": "Config",
+      "file_type": "code",
+      "source_file": "apps/api/internal/config/config.go",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "config_config",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "config"
     },
     {
       "label": "echo.HandlerFunc",
@@ -1722,7 +1513,7 @@
       "_origin": "ast",
       "id": "echo_handlerfunc",
       "community": 11,
-      "community_name": "AuthHandler",
+      "community_name": "main",
       "norm_label": "echo.handlerfunc"
     },
     {
@@ -1733,7 +1524,7 @@
       "_origin": "ast",
       "id": "handler_authhandler",
       "community": 11,
-      "community_name": "AuthHandler",
+      "community_name": "main",
       "norm_label": "authhandler"
     },
     {
@@ -1744,7 +1535,7 @@
       "_origin": "ast",
       "id": "handler_authhandler_login",
       "community": 11,
-      "community_name": "AuthHandler",
+      "community_name": "main",
       "norm_label": ".login()"
     },
     {
@@ -1755,7 +1546,7 @@
       "_origin": "ast",
       "id": "handler_authhandler_middleware",
       "community": 11,
-      "community_name": "AuthHandler",
+      "community_name": "main",
       "norm_label": ".middleware()"
     },
     {
@@ -1766,7 +1557,7 @@
       "_origin": "ast",
       "id": "handler_authhandler_refreshtoken",
       "community": 11,
-      "community_name": "AuthHandler",
+      "community_name": "main",
       "norm_label": ".refreshtoken()"
     },
     {
@@ -1777,15 +1568,103 @@
       "_origin": "ast",
       "id": "handler_authhandler_register",
       "community": 11,
-      "community_name": "AuthHandler",
+      "community_name": "main",
       "norm_label": ".register()"
+    },
+    {
+      "label": "RefreshTokenRequest",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/auth.go",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "model_refreshtokenrequest",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": "refreshtokenrequest"
+    },
+    {
+      "label": ".generateTokens()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "service_authservice_generatetokens",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": ".generatetokens()"
+    },
+    {
+      "label": ".hashPassword()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L227",
+      "_origin": "ast",
+      "id": "service_authservice_hashpassword",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": ".hashpassword()"
+    },
+    {
+      "label": ".Login()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "service_authservice_login",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": ".login()"
+    },
+    {
+      "label": ".RefreshToken()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "service_authservice_refreshtoken",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": ".refreshtoken()"
+    },
+    {
+      "label": ".Register()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "service_authservice_register",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": ".register()"
+    },
+    {
+      "label": ".ValidateToken()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "service_authservice_validatetoken",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": ".validatetoken()"
+    },
+    {
+      "label": ".verifyPassword()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/service/auth_service.go",
+      "source_location": "L235",
+      "_origin": "ast",
+      "id": "service_authservice_verifypassword",
+      "community": 11,
+      "community_name": "main",
+      "norm_label": ".verifypassword()"
     },
     {
       "label": "10. Kriteria penerimaan rilis awal",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L191",
+      "source_location": "L193",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_10_kriteria_penerimaan_rilis_awal",
       "community": 12,
@@ -1797,7 +1676,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L202",
+      "source_location": "L204",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_11_ketergantungan_dan_keputusan_yang_masih_perlu_ditetapkan",
       "community": 12,
@@ -1869,7 +1748,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L142",
+      "source_location": "L144",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_6_persyaratan_produk_dan_ux",
       "community": 12,
@@ -1881,7 +1760,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L153",
+      "source_location": "L155",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_7_persyaratan_nonfungsional",
       "community": 12,
@@ -1893,7 +1772,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L163",
+      "source_location": "L165",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_8_prioritas_rilis",
       "community": 12,
@@ -1905,7 +1784,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L181",
+      "source_location": "L183",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_9_metrik_produk",
       "community": 12,
@@ -1917,7 +1796,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L49",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_a_bahasa_dan_framework_frontend",
       "community": 12,
@@ -1929,7 +1808,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L61",
+      "source_location": "L63",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_b_bahasa_dan_framework_backend",
       "community": 12,
@@ -1953,7 +1832,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L86",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_c_mobile",
       "community": 12,
@@ -1965,7 +1844,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L92",
+      "source_location": "L94",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_d_database_dan_backend_platform",
       "community": 12,
@@ -1977,7 +1856,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L106",
+      "source_location": "L108",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_e_cloud_dan_platform_engineering",
       "community": 12,
@@ -1989,7 +1868,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L118",
+      "source_location": "L120",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_f_ci_cd_qa_dan_kolaborasi",
       "community": 12,
@@ -2001,7 +1880,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L130",
+      "source_location": "L132",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_g_ai_ml_dan_agent_engineering",
       "community": 12,
@@ -2013,7 +1892,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L177",
+      "source_location": "L179",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_kemudian",
       "community": 12,
@@ -2025,7 +1904,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L165",
+      "source_location": "L167",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_mvp",
       "community": 12,
@@ -2049,7 +1928,7 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L171",
+      "source_location": "L173",
       "_origin": "ast",
       "id": "docs_prd_learnhub_vercel_rilis_berikutnya",
       "community": 12,
@@ -2069,39 +1948,6 @@
       "norm_label": "sasaran"
     },
     {
-      "label": "config.go",
-      "file_type": "code",
-      "source_file": "apps/api/internal/config/config.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_internal_config_config",
-      "community": 13,
-      "community_name": "main",
-      "norm_label": "config.go"
-    },
-    {
-      "label": "getEnv()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/config/config.go",
-      "source_location": "L34",
-      "_origin": "ast",
-      "id": "apps_api_internal_config_config_getenv",
-      "community": 13,
-      "community_name": "main",
-      "norm_label": "getenv()"
-    },
-    {
-      "label": "Load()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/config/config.go",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "apps_api_internal_config_config_load",
-      "community": 13,
-      "community_name": "main",
-      "norm_label": "load()"
-    },
-    {
       "label": "practice_handler.go",
       "file_type": "code",
       "source_file": "apps/api/internal/handler/practice_handler.go",
@@ -2109,7 +1955,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_handler_practice_handler",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "practice_handler.go"
     },
     {
@@ -2120,7 +1966,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_handler_practice_handler_go_echo_context",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "echo.context"
     },
     {
@@ -2131,7 +1977,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_handler_practice_handler_newpracticehandler",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "newpracticehandler()"
     },
     {
@@ -2142,7 +1988,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_service_practice_service",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "practice_service.go"
     },
     {
@@ -2153,7 +1999,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_service_practice_service_firstnonempty",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "firstnonempty()"
     },
     {
@@ -2164,7 +2010,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_service_practice_service_go_service_practiceservice",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "practiceservice"
     },
     {
@@ -2175,7 +2021,7 @@
       "_origin": "ast",
       "id": "apps_api_internal_service_practice_service_newpracticeservice",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "newpracticeservice()"
     },
     {
@@ -2186,74 +2032,8 @@
       "_origin": "ast",
       "id": "apps_api_internal_service_practice_service_statusmessage",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "statusmessage()"
-    },
-    {
-      "label": "main.go",
-      "file_type": "code",
-      "source_file": "apps/api/main.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_main",
-      "community": 13,
-      "community_name": "main",
-      "norm_label": "main.go"
-    },
-    {
-      "label": "init()",
-      "file_type": "code",
-      "source_file": "apps/api/main.go",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "apps_api_main_init",
-      "community": 13,
-      "community_name": "main",
-      "norm_label": "init()"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "apps/api/main.go",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "apps_api_main_main",
-      "community": 13,
-      "community_name": "main",
-      "norm_label": "main()"
-    },
-    {
-      "label": "database.go",
-      "file_type": "code",
-      "source_file": "apps/api/pkg/database/database.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_pkg_database_database",
-      "community": 13,
-      "community_name": "main",
-      "norm_label": "database.go"
-    },
-    {
-      "label": "New()",
-      "file_type": "code",
-      "source_file": "apps/api/pkg/database/database.go",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "apps_api_pkg_database_database_new",
-      "community": 13,
-      "community_name": "main",
-      "norm_label": "new()"
-    },
-    {
-      "label": "Config",
-      "file_type": "code",
-      "source_file": "apps/api/internal/config/config.go",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "config_config",
-      "community": 13,
-      "community_name": "main",
-      "norm_label": "config"
     },
     {
       "label": "net/http.Client",
@@ -2263,7 +2043,7 @@
       "_origin": "ast",
       "id": "go_type_net_http_client",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "net/http.client"
     },
     {
@@ -2274,7 +2054,7 @@
       "_origin": "ast",
       "id": "handler_practicehandler",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "practicehandler"
     },
     {
@@ -2285,7 +2065,7 @@
       "_origin": "ast",
       "id": "handler_practicehandler_getexercise",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": ".getexercise()"
     },
     {
@@ -2296,7 +2076,7 @@
       "_origin": "ast",
       "id": "handler_practicehandler_run",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": ".run()"
     },
     {
@@ -2307,7 +2087,7 @@
       "_origin": "ast",
       "id": "handler_practicehandler_unlockhint",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": ".unlockhint()"
     },
     {
@@ -2318,7 +2098,7 @@
       "_origin": "ast",
       "id": "service_exercise",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "exercise"
     },
     {
@@ -2329,7 +2109,7 @@
       "_origin": "ast",
       "id": "service_practiceservice_getexercise",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": ".getexercise()"
     },
     {
@@ -2340,7 +2120,7 @@
       "_origin": "ast",
       "id": "service_practiceservice_request",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": ".request()"
     },
     {
@@ -2351,7 +2131,7 @@
       "_origin": "ast",
       "id": "service_practiceservice_run",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": ".run()"
     },
     {
@@ -2362,7 +2142,7 @@
       "_origin": "ast",
       "id": "service_practiceservice_submit",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": ".submit()"
     },
     {
@@ -2373,7 +2153,7 @@
       "_origin": "ast",
       "id": "service_practiceservice_unlockhint",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": ".unlockhint()"
     },
     {
@@ -2384,7 +2164,7 @@
       "_origin": "ast",
       "id": "service_runnerresult",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "runnerresult"
     },
     {
@@ -2395,7 +2175,7 @@
       "_origin": "ast",
       "id": "service_runresult",
       "community": 13,
-      "community_name": "main",
+      "community_name": "PracticeService",
       "norm_label": "runresult"
     },
     {
@@ -3395,6 +3175,18 @@
       "norm_label": "penerbitan kursus"
     },
     {
+      "label": "nginx.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_materials_nginx",
+      "community": 2,
+      "community_name": "BRD — LearnHub",
+      "norm_label": "nginx.md"
+    },
+    {
       "label": "PRD-LearnHub-Vercel.md",
       "file_type": "document",
       "node_kind": "page",
@@ -4294,31 +4086,31 @@
       "_origin": "ast",
       "id": "planning_graphs_graph_report",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "graph_report.md"
     },
     {
-      "label": "Communities (41 total, 7 thin omitted)",
+      "label": "Communities (42 total, 7 thin omitted)",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L85",
+      "source_location": "L86",
       "_origin": "ast",
-      "id": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "id": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
-      "norm_label": "communities (41 total, 7 thin omitted)"
+      "community_name": "Communities (42 total, 7 thin omitted)",
+      "norm_label": "communities (42 total, 7 thin omitted)"
     },
     {
       "label": "Community 0 - \"context.Context\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L87",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_0_context_context",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 0 - \"context.context\""
     },
     {
@@ -4326,59 +4118,59 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L127",
+      "source_location": "L128",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_10_cn",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 10 - \"cn\""
     },
     {
-      "label": "Community 11 - \"AuthService\"",
+      "label": "Community 11 - \"AuthHandler\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L131",
+      "source_location": "L132",
       "_origin": "ast",
-      "id": "planning_graphs_graph_report_community_11_authservice",
+      "id": "planning_graphs_graph_report_community_11_authhandler",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
-      "norm_label": "community 11 - \"authservice\""
+      "community_name": "Communities (42 total, 7 thin omitted)",
+      "norm_label": "community 11 - \"authhandler\""
     },
     {
       "label": "Community 12 - \"PRD — LearnHub: Katalog Silabus Teknologi\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L135",
+      "source_location": "L136",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_12_prd_learnhub_katalog_silabus_teknologi",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 12 - \"prd — learnhub: katalog silabus teknologi\""
     },
     {
-      "label": "Community 13 - \"PracticeService\"",
+      "label": "Community 13 - \"main\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L139",
+      "source_location": "L140",
       "_origin": "ast",
-      "id": "planning_graphs_graph_report_community_13_practiceservice",
+      "id": "planning_graphs_graph_report_community_13_main",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
-      "norm_label": "community 13 - \"practiceservice\""
+      "community_name": "Communities (42 total, 7 thin omitted)",
+      "norm_label": "community 13 - \"main\""
     },
     {
       "label": "Community 14 - \"CourseHandler\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L143",
+      "source_location": "L144",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_14_coursehandler",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 14 - \"coursehandler\""
     },
     {
@@ -4386,11 +4178,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L147",
+      "source_location": "L148",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_15_scripts",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 15 - \"scripts\""
     },
     {
@@ -4398,11 +4190,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L151",
+      "source_location": "L152",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_16_web_readme_md",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 16 - \"web/readme.md\""
     },
     {
@@ -4410,11 +4202,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L155",
+      "source_location": "L156",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_17_ai_agent_guidelines_learnhub",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 17 - \"ai agent guidelines — learnhub\""
     },
     {
@@ -4422,11 +4214,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L159",
+      "source_location": "L160",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_18_system_design_document_learnhub",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 18 - \"📐 system design document — learnhub\""
     },
     {
@@ -4434,11 +4226,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L163",
+      "source_location": "L164",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_19_claude_system_instructions_learnhub",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 19 - \"claude system instructions — learnhub\""
     },
     {
@@ -4446,11 +4238,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L91",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_1_useauthstore",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 1 - \"useauthstore\""
     },
     {
@@ -4458,11 +4250,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L167",
+      "source_location": "L168",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_20_app_layout_tsx",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 20 - \"app/layout.tsx\""
     },
     {
@@ -4470,11 +4262,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L171",
+      "source_location": "L172",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_21_setup_learnhub",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 21 - \"setup learnhub\""
     },
     {
@@ -4482,35 +4274,35 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L95",
+      "source_location": "L96",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_2_brd_learnhub",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 2 - \"brd — learnhub\""
     },
     {
-      "label": "Community 31 - \"Communities (31 total, 7 thin omitted)\"",
+      "label": "Community 31 - \"Communities (41 total, 7 thin omitted)\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L175",
+      "source_location": "L176",
       "_origin": "ast",
-      "id": "planning_graphs_graph_report_community_31_communities_31_total_7_thin_omitted",
+      "id": "planning_graphs_graph_report_community_31_communities_41_total_7_thin_omitted",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
-      "norm_label": "community 31 - \"communities (31 total, 7 thin omitted)\""
+      "community_name": "Communities (42 total, 7 thin omitted)",
+      "norm_label": "community 31 - \"communities (41 total, 7 thin omitted)\""
     },
     {
       "label": "Community 32 - \"TRD — LearnHub\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L179",
+      "source_location": "L180",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_32_trd_learnhub",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 32 - \"trd — learnhub\""
     },
     {
@@ -4518,11 +4310,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L183",
+      "source_location": "L184",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_33_security_features",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 33 - \"🔒 security features\""
     },
     {
@@ -4530,11 +4322,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L187",
+      "source_location": "L188",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_34_api_endpoints",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 34 - \"🔑 api endpoints\""
     },
     {
@@ -4542,11 +4334,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L191",
+      "source_location": "L192",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_35_key_implementation_details",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 35 - \"📊 key implementation details\""
     },
     {
@@ -4554,11 +4346,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L195",
+      "source_location": "L196",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_36_dependencies",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 36 - \"📦 dependencies\""
     },
     {
@@ -4566,11 +4358,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L199",
+      "source_location": "L200",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_37_common_issues",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 37 - \"🐛 common issues\""
     },
     {
@@ -4578,11 +4370,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L203",
+      "source_location": "L204",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_38_database",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 38 - \"🗄️ database\""
     },
     {
@@ -4590,11 +4382,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L207",
+      "source_location": "L208",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_39_deployment",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 39 - \"🚀 deployment\""
     },
     {
@@ -4602,11 +4394,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L99",
+      "source_location": "L100",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_3_product_requirements_document_prd",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 3 - \"📚 product requirements document (prd)\""
     },
     {
@@ -4614,23 +4406,35 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L211",
+      "source_location": "L212",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_40_quick_start",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 40 - \"🚀 quick start\""
+    },
+    {
+      "label": "Community 41 - \"CourseService\"",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": ".planning/graphs/GRAPH_REPORT.md",
+      "source_location": "L216",
+      "_origin": "ast",
+      "id": "planning_graphs_graph_report_community_41_courseservice",
+      "community": 31,
+      "community_name": "Communities (42 total, 7 thin omitted)",
+      "norm_label": "community 41 - \"courseservice\""
     },
     {
       "label": "Community 4 - \"Learn Platform Backend\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L103",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_4_learn_platform_backend",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 4 - \"learn platform backend\""
     },
     {
@@ -4638,11 +4442,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L107",
+      "source_location": "L108",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_5_dependencies",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 5 - \"dependencies\""
     },
     {
@@ -4650,11 +4454,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L111",
+      "source_location": "L112",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_6_userhandler",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 6 - \"userhandler\""
     },
     {
@@ -4662,35 +4466,35 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L115",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_7_compileroptions",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 7 - \"compileroptions\""
     },
     {
-      "label": "Community 8 - \"gorm.io/gorm.DB\"",
+      "label": "Community 8 - \"User\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L119",
+      "source_location": "L120",
       "_origin": "ast",
-      "id": "planning_graphs_graph_report_community_8_gorm_io_gorm_db",
+      "id": "planning_graphs_graph_report_community_8_user",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
-      "norm_label": "community 8 - \"gorm.io/gorm.db\""
+      "community_name": "Communities (42 total, 7 thin omitted)",
+      "norm_label": "community 8 - \"user\""
     },
     {
       "label": "Community 9 - \"devDependencies\"",
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L123",
+      "source_location": "L124",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_9_devdependencies",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community 9 - \"devdependencies\""
     },
     {
@@ -4702,7 +4506,7 @@
       "_origin": "ast",
       "id": "planning_graphs_graph_report_community_hubs_navigation",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "community hubs (navigation)"
     },
     {
@@ -4714,7 +4518,7 @@
       "_origin": "ast",
       "id": "planning_graphs_graph_report_corpus_check",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "corpus check"
     },
     {
@@ -4722,11 +4526,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L58",
+      "source_location": "L59",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_god_nodes_most_connected_your_core_abstractions",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "god nodes (most connected - your core abstractions)"
     },
     {
@@ -4738,7 +4542,7 @@
       "_origin": "ast",
       "id": "planning_graphs_graph_report_graph_freshness",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "graph freshness"
     },
     {
@@ -4750,7 +4554,7 @@
       "_origin": "ast",
       "id": "planning_graphs_graph_report_graph_report_learn_2_2026_10_15",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "graph report - learn-2  (2026-10-15)"
     },
     {
@@ -4758,11 +4562,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L82",
+      "source_location": "L83",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_import_cycles",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "import cycles"
     },
     {
@@ -4770,11 +4574,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L215",
+      "source_location": "L220",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_knowledge_gaps",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "knowledge gaps"
     },
     {
@@ -4782,11 +4586,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L220",
+      "source_location": "L225",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_suggested_questions",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "suggested questions"
     },
     {
@@ -4798,7 +4602,7 @@
       "_origin": "ast",
       "id": "planning_graphs_graph_report_summary",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "summary"
     },
     {
@@ -4806,11 +4610,11 @@
       "file_type": "document",
       "node_kind": "heading",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L70",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "planning_graphs_graph_report_surprising_connections_you_probably_didn_t_know_these",
       "community": 31,
-      "community_name": "Communities (41 total, 7 thin omitted)",
+      "community_name": "Communities (42 total, 7 thin omitted)",
       "norm_label": "surprising connections (you probably didn't know these)"
     },
     {
@@ -5730,6 +5534,581 @@
       "norm_label": ".updatecoursestatus()"
     },
     {
+      "label": "Course",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/course.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_course_go_model_course",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": "course"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_course_go_user",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": "user"
+    },
+    {
+      "label": "course_repository.go",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_internal_repository_course_repository",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": "course_repository.go"
+    },
+    {
+      "label": "CourseRepository",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "apps_api_internal_repository_course_repository_go_repository_courserepository",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": "courserepository"
+    },
+    {
+      "label": "NewCourseRepository()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "apps_api_internal_repository_course_repository_newcourserepository",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": "newcourserepository()"
+    },
+    {
+      "label": "context.Context",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "go_type_context_context",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": "context.context"
+    },
+    {
+      "label": ".CountLessonsBySectionID()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "repository_courserepository_countlessonsbysectionid",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".countlessonsbysectionid()"
+    },
+    {
+      "label": ".CreateCourse()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "repository_courserepository_createcourse",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".createcourse()"
+    },
+    {
+      "label": ".CreateLesson()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "repository_courserepository_createlesson",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".createlesson()"
+    },
+    {
+      "label": ".CreateSection()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "repository_courserepository_createsection",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".createsection()"
+    },
+    {
+      "label": ".EnrollUser()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L170",
+      "_origin": "ast",
+      "id": "repository_courserepository_enrolluser",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".enrolluser()"
+    },
+    {
+      "label": ".GetAllPublishedCourses()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "repository_courserepository_getallpublishedcourses",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getallpublishedcourses()"
+    },
+    {
+      "label": ".GetCourseByID()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "repository_courserepository_getcoursebyid",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getcoursebyid()"
+    },
+    {
+      "label": ".GetCourseByIDPublic()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "repository_courserepository_getcoursebyidpublic",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getcoursebyidpublic()"
+    },
+    {
+      "label": ".GetCoursesByUserID()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "repository_courserepository_getcoursesbyuserid",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getcoursesbyuserid()"
+    },
+    {
+      "label": ".GetEnrolledCourses()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "repository_courserepository_getenrolledcourses",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getenrolledcourses()"
+    },
+    {
+      "label": ".GetLessonByID()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "repository_courserepository_getlessonbyid",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getlessonbyid()"
+    },
+    {
+      "label": ".GetLessonProgress()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "repository_courserepository_getlessonprogress",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getlessonprogress()"
+    },
+    {
+      "label": ".GetSectionByID()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L127",
+      "_origin": "ast",
+      "id": "repository_courserepository_getsectionbyid",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getsectionbyid()"
+    },
+    {
+      "label": ".GetSectionsByCourseID()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "repository_courserepository_getsectionsbycourseid",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getsectionsbycourseid()"
+    },
+    {
+      "label": ".GetUserLessonProgresses()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "repository_courserepository_getuserlessonprogresses",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".getuserlessonprogresses()"
+    },
+    {
+      "label": ".IsEnrolled()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "repository_courserepository_isenrolled",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".isenrolled()"
+    },
+    {
+      "label": ".SaveLessonProgress()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "repository_courserepository_savelessonprogress",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".savelessonprogress()"
+    },
+    {
+      "label": ".UpdateCourse()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "repository_courserepository_updatecourse",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".updatecourse()"
+    },
+    {
+      "label": ".UpdateLesson()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/repository/course_repository.go",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "repository_courserepository_updatelesson",
+      "community": 42,
+      "community_name": "context.Context",
+      "norm_label": ".updatelesson()"
+    },
+    {
+      "label": "1. Dasar: apa yang dilakukan Nginx?",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_1_dasar_apa_yang_dilakukan_nginx",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "1. dasar: apa yang dilakukan nginx?"
+    },
+    {
+      "label": "2. Praktik dasar: teruskan request ke aplikasi",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_2_praktik_dasar_teruskan_request_ke_aplikasi",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "2. praktik dasar: teruskan request ke aplikasi"
+    },
+    {
+      "label": "3. File statis dan pemilihan path",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_3_file_statis_dan_pemilihan_path",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "3. file statis dan pemilihan path"
+    },
+    {
+      "label": "4. Praktik kerja: diagnosis `502 Bad Gateway`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_4_praktik_kerja_diagnosis_502_bad_gateway",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "4. praktik kerja: diagnosis `502 bad gateway`"
+    },
+    {
+      "label": "5. Lanjutan: HTTPS, load balancing, dan hardening",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_5_lanjutan_https_load_balancing_dan_hardening",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "5. lanjutan: https, load balancing, dan hardening"
+    },
+    {
+      "label": "Langkah diagnosis",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_langkah_diagnosis",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "langkah diagnosis"
+    },
+    {
+      "label": "Lima hint bertahap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_lima_hint_bertahap",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "lima hint bertahap"
+    },
+    {
+      "label": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "materi: nginx untuk reverse proxy dan deployment web"
+    },
+    {
+      "label": "Pemeriksaan pemahaman",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L117",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_pemeriksaan_pemahaman",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "pemeriksaan pemahaman"
+    },
+    {
+      "label": "Prasyarat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_prasyarat",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "prasyarat"
+    },
+    {
+      "label": "Referensi",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_referensi",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "referensi"
+    },
+    {
+      "label": "Skenario",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_skenario",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "skenario"
+    },
+    {
+      "label": "Tugas",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_tugas",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "tugas"
+    },
+    {
+      "label": "Tujuan belajar",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "docs_materials_nginx_tujuan_belajar",
+      "community": 43,
+      "community_name": "Materi: Nginx untuk Reverse Proxy dan Deployment Web",
+      "norm_label": "tujuan belajar"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_web_src_types_index",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "COURSE_ICONS",
+      "file_type": "code",
+      "source_file": "apps/web/src/types/index.ts",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "apps_web_src_types_index_course_icons",
+      "community": 44,
+      "community_name": "index.ts",
+      "norm_label": "course_icons"
+    },
+    {
+      "label": "enrollment.go",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/enrollment.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_enrollment",
+      "community": 45,
+      "community_name": "Enrollment",
+      "norm_label": "enrollment.go"
+    },
+    {
+      "label": "Course",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_enrollment_go_course",
+      "community": 45,
+      "community_name": "Enrollment",
+      "norm_label": "course"
+    },
+    {
+      "label": "Enrollment",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/enrollment.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_enrollment_go_model_enrollment",
+      "community": 45,
+      "community_name": "Enrollment",
+      "norm_label": "enrollment"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_enrollment_go_user",
+      "community": 45,
+      "community_name": "Enrollment",
+      "norm_label": "user"
+    },
+    {
+      "label": ".BeforeCreate()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/enrollment.go",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "model_enrollment_beforecreate",
+      "community": 45,
+      "community_name": "Enrollment",
+      "norm_label": ".beforecreate()"
+    },
+    {
+      "label": "transaction.go",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/transaction.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_transaction",
+      "community": 46,
+      "community_name": "Transaction",
+      "norm_label": "transaction.go"
+    },
+    {
+      "label": "Course",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_transaction_go_course",
+      "community": 46,
+      "community_name": "Transaction",
+      "norm_label": "course"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "apps_api_internal_model_transaction_go_user",
+      "community": 46,
+      "community_name": "Transaction",
+      "norm_label": "user"
+    },
+    {
+      "label": "Transaction",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/transaction.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "model_transaction",
+      "community": 46,
+      "community_name": "Transaction",
+      "norm_label": "transaction"
+    },
+    {
+      "label": ".BeforeCreate()",
+      "file_type": "code",
+      "source_file": "apps/api/internal/model/transaction.go",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "model_transaction_beforecreate",
+      "community": 46,
+      "community_name": "Transaction",
+      "norm_label": ".beforecreate()"
+    },
+    {
       "label": "dependencies",
       "file_type": "code",
       "source_file": "apps/web/package.json",
@@ -6533,61 +6912,6 @@
       "norm_label": "**/*.tsx"
     },
     {
-      "label": "auth.go",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/auth.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_auth",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": "auth.go"
-    },
-    {
-      "label": "AuthResponse",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/auth.go",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_auth_go_model_authresponse",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": "authresponse"
-    },
-    {
-      "label": "Claims",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/auth.go",
-      "source_location": "L26",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_auth_go_model_claims",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": "claims"
-    },
-    {
-      "label": "LoginRequest",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/auth.go",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_auth_go_model_loginrequest",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": "loginrequest"
-    },
-    {
-      "label": "RegisterRequest",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/auth.go",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "apps_api_internal_model_auth_go_model_registerrequest",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": "registerrequest"
-    },
-    {
       "label": "user.go",
       "file_type": "code",
       "source_file": "apps/api/internal/model/user.go",
@@ -6654,39 +6978,6 @@
       "norm_label": "newuserrepository()"
     },
     {
-      "label": "auth_service.go",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "apps_api_internal_service_auth_service",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": "auth_service.go"
-    },
-    {
-      "label": "AuthService",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "apps_api_internal_service_auth_service_go_service_authservice",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": "authservice"
-    },
-    {
-      "label": "NewAuthService()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "apps_api_internal_service_auth_service_newauthservice",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": "newauthservice()"
-    },
-    {
       "label": "user_service.go",
       "file_type": "code",
       "source_file": "apps/api/internal/service/user_service.go",
@@ -6729,28 +7020,6 @@
       "community": 8,
       "community_name": "User",
       "norm_label": "createuserrequest"
-    },
-    {
-      "label": "RefreshTokenRequest",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/auth.go",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "model_refreshtokenrequest",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": "refreshtokenrequest"
-    },
-    {
-      "label": ".BeforeCreate()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/model/user.go",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "model_user_beforecreate",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": ".beforecreate()"
     },
     {
       "label": ".ToResponse()",
@@ -6850,83 +7119,6 @@
       "community": 8,
       "community_name": "User",
       "norm_label": ".update()"
-    },
-    {
-      "label": ".generateTokens()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L190",
-      "_origin": "ast",
-      "id": "service_authservice_generatetokens",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": ".generatetokens()"
-    },
-    {
-      "label": ".hashPassword()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L227",
-      "_origin": "ast",
-      "id": "service_authservice_hashpassword",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": ".hashpassword()"
-    },
-    {
-      "label": ".Login()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L82",
-      "_origin": "ast",
-      "id": "service_authservice_login",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": ".login()"
-    },
-    {
-      "label": ".RefreshToken()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L119",
-      "_origin": "ast",
-      "id": "service_authservice_refreshtoken",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": ".refreshtoken()"
-    },
-    {
-      "label": ".Register()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L33",
-      "_origin": "ast",
-      "id": "service_authservice_register",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": ".register()"
-    },
-    {
-      "label": ".ValidateToken()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L166",
-      "_origin": "ast",
-      "id": "service_authservice_validatetoken",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": ".validatetoken()"
-    },
-    {
-      "label": ".verifyPassword()",
-      "file_type": "code",
-      "source_file": "apps/api/internal/service/auth_service.go",
-      "source_location": "L235",
-      "_origin": "ast",
-      "id": "service_authservice_verifypassword",
-      "community": 8,
-      "community_name": "User",
-      "norm_label": ".verifypassword()"
     },
     {
       "label": ".Delete()",
@@ -14279,6 +14471,160 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L1",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx",
+      "target": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L100",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_4_praktik_kerja_diagnosis_502_bad_gateway",
+      "target": "docs_materials_nginx_lima_hint_bertahap",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L82",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_4_praktik_kerja_diagnosis_502_bad_gateway",
+      "target": "docs_materials_nginx_skenario",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L86",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_4_praktik_kerja_diagnosis_502_bad_gateway",
+      "target": "docs_materials_nginx_tugas",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L90",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_4_praktik_kerja_diagnosis_502_bad_gateway",
+      "target": "docs_materials_nginx_langkah_diagnosis",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L108",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "target": "docs_materials_nginx_5_lanjutan_https_load_balancing_dan_hardening",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L117",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "target": "docs_materials_nginx_pemeriksaan_pemahaman",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L126",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "target": "docs_materials_nginx_referensi",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L15",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "target": "docs_materials_nginx_1_dasar_apa_yang_dilakukan_nginx",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L35",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "target": "docs_materials_nginx_2_praktik_dasar_teruskan_request_ke_aplikasi",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L5",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "target": "docs_materials_nginx_tujuan_belajar",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L66",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "target": "docs_materials_nginx_3_file_statis_dan_pemilihan_path",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L80",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "target": "docs_materials_nginx_4_praktik_kerja_diagnosis_502_bad_gateway",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/materials/nginx.md",
+      "source_location": "L9",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_materials_nginx_materi_nginx_untuk_reverse_proxy_dan_deployment_web",
+      "target": "docs_materials_nginx_prasyarat",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
       "source_location": "L1",
       "weight": 1,
@@ -14313,7 +14659,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L106",
+      "source_location": "L108",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_5_katalog_silabus",
@@ -14324,7 +14670,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L118",
+      "source_location": "L120",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_5_katalog_silabus",
@@ -14335,7 +14681,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L130",
+      "source_location": "L132",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_5_katalog_silabus",
@@ -14346,7 +14692,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L49",
+      "source_location": "L51",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_5_katalog_silabus",
@@ -14357,7 +14703,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L61",
+      "source_location": "L63",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_5_katalog_silabus",
@@ -14368,7 +14714,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L86",
+      "source_location": "L88",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_5_katalog_silabus",
@@ -14379,7 +14725,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L92",
+      "source_location": "L94",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_5_katalog_silabus",
@@ -14390,7 +14736,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L165",
+      "source_location": "L167",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_8_prioritas_rilis",
@@ -14401,7 +14747,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L171",
+      "source_location": "L173",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_8_prioritas_rilis",
@@ -14412,7 +14758,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L177",
+      "source_location": "L179",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_8_prioritas_rilis",
@@ -14434,7 +14780,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L142",
+      "source_location": "L144",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_prd_learnhub_katalog_silabus_teknologi",
@@ -14445,7 +14791,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L153",
+      "source_location": "L155",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_prd_learnhub_katalog_silabus_teknologi",
@@ -14456,7 +14802,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L163",
+      "source_location": "L165",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_prd_learnhub_katalog_silabus_teknologi",
@@ -14467,7 +14813,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L181",
+      "source_location": "L183",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_prd_learnhub_katalog_silabus_teknologi",
@@ -14478,7 +14824,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L191",
+      "source_location": "L193",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_prd_learnhub_katalog_silabus_teknologi",
@@ -14489,7 +14835,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/PRD-LearnHub-Vercel.md",
-      "source_location": "L202",
+      "source_location": "L204",
       "weight": 1,
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel_prd_learnhub_katalog_silabus_teknologi",
@@ -14830,10 +15176,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L103",
+      "source_location": "L100",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
+      "target": "planning_graphs_graph_report_community_3_product_requirements_document_prd",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/graphs/GRAPH_REPORT.md",
+      "source_location": "L104",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_4_learn_platform_backend",
       "confidence_score": 1
     },
@@ -14841,10 +15198,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L107",
+      "source_location": "L108",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_5_dependencies",
       "confidence_score": 1
     },
@@ -14852,10 +15209,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L111",
+      "source_location": "L112",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_6_userhandler",
       "confidence_score": 1
     },
@@ -14863,10 +15220,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L115",
+      "source_location": "L116",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_7_compileroptions",
       "confidence_score": 1
     },
@@ -14874,21 +15231,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L119",
+      "source_location": "L120",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
-      "target": "planning_graphs_graph_report_community_8_gorm_io_gorm_db",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
+      "target": "planning_graphs_graph_report_community_8_user",
       "confidence_score": 1
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L123",
+      "source_location": "L124",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_9_devdependencies",
       "confidence_score": 1
     },
@@ -14896,10 +15253,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L127",
+      "source_location": "L128",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_10_cn",
       "confidence_score": 1
     },
@@ -14907,21 +15264,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L131",
+      "source_location": "L132",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
-      "target": "planning_graphs_graph_report_community_11_authservice",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
+      "target": "planning_graphs_graph_report_community_11_authhandler",
       "confidence_score": 1
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L135",
+      "source_location": "L136",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_12_prd_learnhub_katalog_silabus_teknologi",
       "confidence_score": 1
     },
@@ -14929,21 +15286,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L139",
+      "source_location": "L140",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
-      "target": "planning_graphs_graph_report_community_13_practiceservice",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
+      "target": "planning_graphs_graph_report_community_13_main",
       "confidence_score": 1
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L143",
+      "source_location": "L144",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_14_coursehandler",
       "confidence_score": 1
     },
@@ -14951,10 +15308,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L147",
+      "source_location": "L148",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_15_scripts",
       "confidence_score": 1
     },
@@ -14962,10 +15319,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L151",
+      "source_location": "L152",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_16_web_readme_md",
       "confidence_score": 1
     },
@@ -14973,10 +15330,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L155",
+      "source_location": "L156",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_17_ai_agent_guidelines_learnhub",
       "confidence_score": 1
     },
@@ -14984,10 +15341,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L159",
+      "source_location": "L160",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_18_system_design_document_learnhub",
       "confidence_score": 1
     },
@@ -14995,10 +15352,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L163",
+      "source_location": "L164",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_19_claude_system_instructions_learnhub",
       "confidence_score": 1
     },
@@ -15006,10 +15363,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L167",
+      "source_location": "L168",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_20_app_layout_tsx",
       "confidence_score": 1
     },
@@ -15017,10 +15374,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L171",
+      "source_location": "L172",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_21_setup_learnhub",
       "confidence_score": 1
     },
@@ -15028,21 +15385,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L175",
+      "source_location": "L176",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
-      "target": "planning_graphs_graph_report_community_31_communities_31_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
+      "target": "planning_graphs_graph_report_community_31_communities_41_total_7_thin_omitted",
       "confidence_score": 1
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L179",
+      "source_location": "L180",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_32_trd_learnhub",
       "confidence_score": 1
     },
@@ -15050,10 +15407,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L183",
+      "source_location": "L184",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_33_security_features",
       "confidence_score": 1
     },
@@ -15061,10 +15418,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L187",
+      "source_location": "L188",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_34_api_endpoints",
       "confidence_score": 1
     },
@@ -15072,10 +15429,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L191",
+      "source_location": "L192",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_35_key_implementation_details",
       "confidence_score": 1
     },
@@ -15083,10 +15440,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L195",
+      "source_location": "L196",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_36_dependencies",
       "confidence_score": 1
     },
@@ -15094,10 +15451,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L199",
+      "source_location": "L200",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_37_common_issues",
       "confidence_score": 1
     },
@@ -15105,10 +15462,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L203",
+      "source_location": "L204",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_38_database",
       "confidence_score": 1
     },
@@ -15116,10 +15473,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L207",
+      "source_location": "L208",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_39_deployment",
       "confidence_score": 1
     },
@@ -15127,10 +15484,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L211",
+      "source_location": "L212",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_40_quick_start",
       "confidence_score": 1
     },
@@ -15138,10 +15495,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L87",
+      "source_location": "L216",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
+      "target": "planning_graphs_graph_report_community_41_courseservice",
+      "confidence_score": 1
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/graphs/GRAPH_REPORT.md",
+      "source_location": "L88",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_0_context_context",
       "confidence_score": 1
     },
@@ -15149,10 +15517,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L91",
+      "source_location": "L92",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_1_useauthstore",
       "confidence_score": 1
     },
@@ -15160,22 +15528,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L95",
+      "source_location": "L96",
       "weight": 1,
       "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "source": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "target": "planning_graphs_graph_report_community_2_brd_learnhub",
-      "confidence_score": 1
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L99",
-      "weight": 1,
-      "_origin": "ast",
-      "source": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
-      "target": "planning_graphs_graph_report_community_3_product_requirements_document_prd",
       "confidence_score": 1
     },
     {
@@ -15204,7 +15561,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L215",
+      "source_location": "L220",
       "weight": 1,
       "_origin": "ast",
       "source": "planning_graphs_graph_report_graph_report_learn_2_2026_10_15",
@@ -15215,7 +15572,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L220",
+      "source_location": "L225",
       "weight": 1,
       "_origin": "ast",
       "source": "planning_graphs_graph_report_graph_report_learn_2_2026_10_15",
@@ -15237,7 +15594,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L58",
+      "source_location": "L59",
       "weight": 1,
       "_origin": "ast",
       "source": "planning_graphs_graph_report_graph_report_learn_2_2026_10_15",
@@ -15259,7 +15616,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L70",
+      "source_location": "L71",
       "weight": 1,
       "_origin": "ast",
       "source": "planning_graphs_graph_report_graph_report_learn_2_2026_10_15",
@@ -15270,7 +15627,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L82",
+      "source_location": "L83",
       "weight": 1,
       "_origin": "ast",
       "source": "planning_graphs_graph_report_graph_report_learn_2_2026_10_15",
@@ -15281,11 +15638,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".planning/graphs/GRAPH_REPORT.md",
-      "source_location": "L85",
+      "source_location": "L86",
       "weight": 1,
       "_origin": "ast",
       "source": "planning_graphs_graph_report_graph_report_learn_2_2026_10_15",
-      "target": "planning_graphs_graph_report_communities_41_total_7_thin_omitted",
+      "target": "planning_graphs_graph_report_communities_42_total_7_thin_omitted",
       "confidence_score": 1
     },
     {
@@ -16903,6 +17260,17 @@
       "_origin": "ast",
       "source": "docs_prd_learnhub_vercel",
       "target": "docs_brd_learnhub_vercel",
+      "confidence_score": 1
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PRD-LearnHub-Vercel.md",
+      "source_location": "L49",
+      "weight": 1,
+      "_origin": "ast",
+      "source": "docs_prd_learnhub_vercel",
+      "target": "docs_materials_nginx",
       "confidence_score": 1
     },
     {
