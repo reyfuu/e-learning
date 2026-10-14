@@ -39,3 +39,6 @@ Anda adalah AI Assistant yang membantu pengembangan platform e-learning **LearnH
 - Gunakan Chrome DevTools untuk inspeksi dan debugging browser saat tugas menyentuh perilaku web.
 - Gunakan Claude in Chrome untuk tugas browser yang membutuhkan kontrol atau inspeksi melalui ekstensi tersebut.
 - Jalankan perintah terminal melalui `rtk` sesuai `/home/reyfuu/.codex/RTK.md`.
+
+## Penyelesaian Sesi
+- Wajib menjalankan Graphify (`gsd-graphify`) di akhir setiap sesi/tugas setelah perubahan selesai; jika tidak bisa dijalankan, laporkan kendalanya secara eksplisit.

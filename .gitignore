@@ -16,3 +16,7 @@ apps/api/bin/
 !**/.env.example
 apps/web/.env.local
 apps/api/.env
+
+# Graphify generated working output and cache
+graphify-out/
+.planning/cache/
