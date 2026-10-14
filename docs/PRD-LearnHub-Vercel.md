@@ -46,6 +46,8 @@ Setiap jalur teknologi memiliki: tujuan, target audiens, prasyarat, estimasi jam
 
 Topik berikut adalah cetak biru kurikulum. Setiap butir menjadi rangkaian lesson, demo, latihan, dan asesmen; bukan klaim bahwa semua materi sudah diproduksi.
 
+Materi teks Nginx untuk reverse proxy, operasi, dan diagnosis `502` tersedia di [materi Nginx](materials/nginx.md).
+
 ### A. Bahasa dan framework frontend
 
 | Teknologi | Basic | Advanced |
