@@ -1,0 +1,5 @@
+FROM criyle/go-judge:v1.12.2
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends golang-go nodejs \
+    && rm -rf /var/lib/apt/lists/*

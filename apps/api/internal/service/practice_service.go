@@ -45,7 +45,7 @@ type RunResult struct {
 }
 
 func NewPracticeService(db *gorm.DB, runnerURL, runnerToken string) *PracticeService {
-	return &PracticeService{db: db, runnerURL: strings.TrimRight(runnerURL, "/"), runnerToken: runnerToken, client: &http.Client{Timeout: 15 * time.Second}}
+	return &PracticeService{db: db, runnerURL: strings.TrimRight(runnerURL, "/"), runnerToken: runnerToken, client: &http.Client{Timeout: 70 * time.Second}}
 }
 
 var emailExercise = Exercise{
@@ -106,8 +106,7 @@ func (s *PracticeService) Run(ctx context.Context, language, source string) (*Ru
 	if len(source) == 0 || len(source) > 16000 {
 		return nil, errors.New("source code wajib diisi dan maksimal 16 KB")
 	}
-	languageID := map[string]int{"javascript": 63, "go": 60}[language]
-	if languageID == 0 {
+	if language != "javascript" && language != "go" {
 		return nil, errors.New("bahasa hanya mendukung JavaScript dan Go")
 	}
 	inputs := []struct{ input, expected string }{
@@ -115,67 +114,76 @@ func (s *PracticeService) Run(ctx context.Context, language, source string) (*Ru
 		{"BUDI+HR@CORP.ID", "budi+hr@corp.id\n"},
 		{"  Support@LearnHub.ID\nADMIN@LEARNHUB.ID  ", "support@learnhub.id\nadmin@learnhub.id\n"},
 	}
-	result := &RunResult{Total: len(inputs), Status: "Belum lolos semua test"}
+	var stdin, expected strings.Builder
 	for _, tc := range inputs {
-		actual, status, err := s.submit(ctx, source, languageID, tc.input, tc.expected)
-		if err != nil {
-			return nil, err
+		stdin.WriteString(tc.input)
+		if !strings.HasSuffix(tc.input, "\n") {
+			stdin.WriteByte('\n')
 		}
-		if status == 3 && actual == tc.expected {
+		expected.WriteString(tc.expected)
+	}
+	actual, status, err := s.submit(ctx, source, language, stdin.String())
+	if err != nil {
+		return nil, err
+	}
+	result := &RunResult{Total: len(inputs), Status: "Belum lolos semua test"}
+	remaining := actual
+	if status == "Accepted" {
+		for _, tc := range inputs {
+			if !strings.HasPrefix(remaining, tc.expected) {
+				break
+			}
 			result.Passed++
-		}
-		if result.Passed < result.Total {
-			result.Output = statusMessage(status, actual)
+			remaining = strings.TrimPrefix(remaining, tc.expected)
 		}
 	}
-	if result.Passed == result.Total {
+	if status == "Accepted" && actual == expected.String() {
 		result.Status = "Semua test lolos"
-		result.Output = ""
+	} else {
+		result.Output = statusMessage(status, actual)
 	}
 	return result, nil
 }
 
-type judgeResult struct {
-	Token         string  `json:"token"`
-	Stdout        *string `json:"stdout"`
-	Stderr        *string `json:"stderr"`
-	CompileOutput *string `json:"compile_output"`
-	Status        struct {
-		ID          int    `json:"id"`
-		Description string `json:"description"`
-	} `json:"status"`
+type runnerResult struct {
+	Status string            `json:"status"`
+	Error  string            `json:"error"`
+	Files  map[string]string `json:"files"`
 }
 
-func (s *PracticeService) submit(ctx context.Context, source string, languageID int, stdin, expected string) (string, int, error) {
-	payload, _ := json.Marshal(map[string]any{"source_code": source, "language_id": languageID, "stdin": stdin, "expected_output": expected, "cpu_time_limit": 2, "wall_time_limit": 5, "memory_limit": 128000, "max_file_size": 1024})
-	url := s.runnerURL + "/submissions?base64_encoded=false&wait=true"
-	var res judgeResult
-	if err := s.request(ctx, http.MethodPost, url, payload, &res); err != nil {
-		return "", 0, err
+func (s *PracticeService) submit(ctx context.Context, source, language, stdin string) (string, string, error) {
+	filename, args := "main.js", []string{"/usr/bin/node", "main.js"}
+	if language == "go" {
+		filename, args = "main.go", []string{"/bin/sh", "-c", "go build -p 2 -o /tmp/main main.go && /tmp/main"}
 	}
-	if res.Status.ID == 0 {
-		if res.Token == "" {
-			return "", 0, errors.New("runner tidak mengembalikan token submission")
+	payload, _ := json.Marshal(map[string]any{"cmd": []any{map[string]any{
+		"args":     args,
+		"env":      []string{"PATH=/usr/local/go/bin:/usr/bin:/bin", "GOCACHE=/tmp/.gocache", "GOTMPDIR=/tmp", "GOMAXPROCS=2"},
+		"files":    []any{map[string]string{"content": stdin}, map[string]any{"name": "stdout", "max": 8192}, map[string]any{"name": "stderr", "max": 8192}},
+		"cpuLimit": 30_000_000_000, "clockLimit": 60_000_000_000, "memoryLimit": 536_870_912, "procLimit": 50,
+		"copyIn": map[string]any{filename: map[string]string{"content": source}},
+	}}})
+	var results []runnerResult
+	if err := s.request(ctx, http.MethodPost, s.runnerURL+"/run", payload, &results); err != nil {
+		return "", "", err
+	}
+	if len(results) != 1 {
+		return "", "", errors.New("runner mengembalikan hasil yang tidak valid")
+	}
+	res := results[0]
+	if res.Error != "" || res.Status == "Internal Error" {
+		return "", "", fmt.Errorf("runner gagal menjalankan sandbox: %s", firstNonEmpty(res.Error, res.Status))
+	}
+	return firstNonEmpty(res.Files["stdout"], res.Files["stderr"]), res.Status, nil
+}
+
+func firstNonEmpty(values ...string) string {
+	for _, value := range values {
+		if value != "" {
+			return value
 		}
-		deadline := time.Now().Add(10 * time.Second)
-		for time.Now().Before(deadline) {
-			time.Sleep(250 * time.Millisecond)
-			if err := s.request(ctx, http.MethodGet, s.runnerURL+"/submissions/"+res.Token+"?base64_encoded=false", nil, &res); err != nil {
-				return "", 0, err
-			}
-			if res.Status.ID > 2 {
-				break
-			}
-		}
 	}
-	actual := ""
-	if res.Stdout != nil {
-		actual = *res.Stdout
-	}
-	if res.Status.ID <= 2 {
-		return actual, res.Status.ID, errors.New("runner timeout menunggu hasil eksekusi")
-	}
-	return actual, res.Status.ID, nil
+	return ""
 }
 
 func (s *PracticeService) request(ctx context.Context, method, url string, body []byte, out any) error {
@@ -185,7 +193,7 @@ func (s *PracticeService) request(ctx context.Context, method, url string, body 
 	}
 	req.Header.Set("Content-Type", "application/json")
 	if s.runnerToken != "" {
-		req.Header.Set("X-Auth-Token", s.runnerToken)
+		req.Header.Set("Authorization", "Bearer "+s.runnerToken)
 	}
 	resp, err := s.client.Do(req)
 	if err != nil {
@@ -198,19 +206,17 @@ func (s *PracticeService) request(ctx context.Context, method, url string, body 
 	return json.NewDecoder(io.LimitReader(resp.Body, 64*1024)).Decode(out)
 }
 
-func statusMessage(status int, output string) string {
+func statusMessage(status, output string) string {
 	switch status {
-	case 3:
+	case "Accepted":
 		return "Output belum sesuai expected result. " + output
-	case 4:
-		return "Jawaban salah. Periksa whitespace dan huruf besar/kecil."
-	case 5:
+	case "Nonzero Exit Status":
+		return "Program gagal. Periksa kode dan pesan error. " + output
+	case "Memory Limit Exceeded":
 		return "Program kehabisan memori."
-	case 6:
-		return "Program gagal dikompilasi."
-	case 7, 8, 9, 10, 11, 12:
+	case "Time Limit Exceeded":
 		return "Program gagal saat dijalankan atau melewati batas waktu."
 	default:
-		return "Program belum lolos. Periksa kembali hasilnya."
+		return "Program belum lolos (" + status + "). Periksa kembali hasilnya. " + output
 	}
 }

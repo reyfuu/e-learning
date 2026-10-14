@@ -115,9 +115,9 @@ POST   /api/v1/auth/refresh      # Refresh access token
 ```text
 GET    /api/v1/practice/exercises/:id       # Detail latihan dan progres hint
 POST   /api/v1/practice/exercises/:id/hints # Buka satu dari lima hint
-POST   /api/v1/practice/exercises/:id/run   # Jalankan kode pada runner Judge0
+POST   /api/v1/practice/exercises/:id/run   # Jalankan kode pada runner go-judge
 ```
-Atur `CODE_RUNNER_URL` ke instance Judge0 yang dikelola dan diisolasi dengan aman. `CODE_RUNNER_TOKEN` opsional untuk instance yang mengaktifkan autentikasi. Tanpa URL, UI tetap dapat dibuka tetapi eksekusi mengembalikan HTTP 503.
+Jalankan runner lokal dengan `docker compose -f docker-compose.runner.yml up -d --build`. Atur `CODE_RUNNER_URL` dan `CODE_RUNNER_TOKEN` di `.env`; runner dibatasi ke loopback dan menonaktifkan akses jaringan untuk kode yang dijalankan. Tanpa URL, UI tetap dapat dibuka tetapi eksekusi mengembalikan HTTP 503.
 
 ### Users (Protected)
 ```

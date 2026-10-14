@@ -13,7 +13,7 @@ type Config struct {
 	DatabaseURL     string // DSN PostgreSQL (lihat .env.example)
 	JWTSecret       string // penandatanganan access/refresh token
 	CORSOrigin      string // origin frontend yang diizinkan
-	CodeRunnerURL   string // URL instance Judge0; kosong berarti eksekusi dinonaktifkan
+	CodeRunnerURL   string // URL instance go-judge; kosong berarti eksekusi dinonaktifkan
 	CodeRunnerToken string
 }
 
