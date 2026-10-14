@@ -1,8 +1,8 @@
 # 📚 Product Requirements Document (PRD)
 ## Platform E-Learning — *LearnHub*
 
-**Versi:** 1.0.0  
-**Tanggal:** 18 Juni 2026  
+**Versi:** 1.1.0  
+**Tanggal:** 15 Oktober 2026  
 **Status:** Draft untuk Review  
 **Tech Stack:** Next.js 14 · Go 1.22 · PostgreSQL 16 · Tailwind CSS 3
 
@@ -79,6 +79,7 @@
 | Upload Video Materi | P0 | Direct upload ke cloud storage |
 | Tambah Materi Teks/PDF | P1 | Rich text & file attachment |
 | Kuis & Ujian | P1 | Multiple choice, true/false |
+| Latihan Coding Interaktif | P1 | Editor dan runner browser terisolasi; evaluasi otomatis dan tepat lima hint bertingkat |
 | Penetapan Harga | P0 | Gratis, berbayar, atau diskon |
 | Preview Kursus Gratis | P1 | Pelajaran pertama dapat diakses tanpa bayar |
 | Sertifikat Penyelesaian | P1 | Auto-generated PDF |
@@ -180,7 +181,7 @@
 
 | Komponen | Teknologi |
 |---|---|
-| HTTP Framework | Gin atau Echo |
+| HTTP Framework | Echo v4 |
 | ORM / Query Builder | sqlc + pgx |
 | Authentication | JWT (golang-jwt) + bcrypt |
 | File Upload | Multipart + streaming ke S3 |
@@ -365,6 +366,14 @@ CREATE TABLE certificates (
 | GET | `/api/v1/my/enrollments/:courseId/progress` | Progres kursus |
 | POST | `/api/v1/lessons/:id/progress` | Update progres pelajaran |
 
+### Latihan Coding
+| Method | Endpoint | Deskripsi |
+|---|---|---|
+| GET | `/api/v1/exercises` | Daftar latihan menurut topik/bahasa/level |
+| GET | `/api/v1/exercises/:id` | Detail latihan dan starter code |
+| POST | `/api/v1/exercises/:id/runs` | Kirim solusi untuk dieksekusi di runner terisolasi |
+| POST | `/api/v1/exercises/:id/hints` | Buka hint berikutnya secara berurutan (tepat 5 per latihan) |
+
 ### Pembayaran
 | Method | Endpoint | Deskripsi |
 |---|---|---|
@@ -464,6 +473,7 @@ learnhub/
 - XSS protection via proper sanitization
 - CORS policy yang ketat
 - File upload validation (tipe, ukuran)
+- Kode latihan dianggap tidak tepercaya: jalankan hanya di sandbox ephemeral tanpa network/secrets/akses host, dengan limit CPU, memori, waktu, proses, output dan ukuran submission.
 
 ### 9.4 Ketersediaan
 - Target uptime: 99.5% (≤ 3.65 jam downtime/tahun)
@@ -486,6 +496,7 @@ learnhub/
 - [ ] Upload & streaming video
 - [ ] Enrollment kursus (gratis)
 - [ ] Tracking progres belajar
+- [ ] Pilot latihan coding interaktif Go dan JavaScript/TypeScript dengan runner terisolasi dan lima hint per soal
 - [ ] Halaman publik kursus & pencarian
 
 ### 💳 Phase 2 — Monetisasi (Bulan 4–5)

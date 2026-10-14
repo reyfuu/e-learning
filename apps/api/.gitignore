@@ -1,0 +1,34 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Test binaries
+*.test
+
+# Output
+*.out
+
+# Go module files are source dependencies and must be committed.
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+judge0.conf
+
+# Logs
+*.log
+
+# Build output
+/bin
+/dist

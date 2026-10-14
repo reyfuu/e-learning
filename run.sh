@@ -1,21 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
+root="$(cd "$(dirname "$0")" && pwd)"
+cd "$root"
 
-echo "Starting Backend (Go) and Frontend (Next.js)..."
+(cd apps/api && go run .) &
+api_pid=$!
+(pnpm --filter @learnhub/web exec next dev --hostname 127.0.0.1) &
+web_pid=$!
 
-# Trap SIGINT to kill both processes on exit
-trap 'kill $(jobs -p)' SIGINT EXIT
-
-# Start Backend
-echo "Starting Go backend..."
-cd backend
-go run main.go &
-cd ..
-
-# Start Frontend
-echo "Starting Next.js frontend..."
-cd frontend-app
-npm run dev -- -H 0.0.0.0 &
-cd ..
-
-echo "Both services are running! Press Ctrl+C to stop."
+cleanup() {
+  kill "$api_pid" "$web_pid" 2>/dev/null || true
+}
+trap cleanup EXIT INT TERM
 wait

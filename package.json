@@ -1,0 +1,13 @@
+{
+  "name": "learnhub",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "pnpm --filter @learnhub/web dev",
+    "build": "pnpm --filter @learnhub/web build",
+    "lint": "pnpm --filter @learnhub/web lint",
+    "web:dev": "pnpm --filter @learnhub/web dev",
+    "api:dev": "cd apps/api && go run .",
+    "dev:all": "bash ./run.sh"
+  }
+}

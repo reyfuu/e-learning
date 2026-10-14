@@ -3,7 +3,7 @@
 # setup-postgres.sh — Buat role & database PostgreSQL untuk Learn Platform
 # =============================================================================
 # Default: user audi, password 090393, database learn_platform
-# (sinkron dengan backend/.env dan apps/docker-compose.yml)
+# (sinkron dengan apps/api/.env dan deployment lokal)
 #
 # Penggunaan:
 #   make db-setup-local
@@ -49,5 +49,5 @@ echo "Connect:"
 echo "  psql -U ${DB_USER} -d postgres"
 echo "  psql -U ${DB_USER} -d ${DB_NAME}"
 echo ""
-echo "Backend .env (folder apps/backend):"
+echo "API .env (folder apps/api):"
 echo "DATABASE_URL=postgres://${DB_USER}:${DB_PASS}@localhost:5432/${DB_NAME}?sslmode=disable"

@@ -1,6 +1,6 @@
 # 📐 System Design Document — LearnHub
 
-**Versi:** 1.0.0
+**Versi:** 1.1.0
 **Status:** Berdasarkan PRD_eLearning.md
 
 Dokumen ini merinci arsitektur teknis, stack teknologi, skema database, dan desain API untuk platform LearnHub.
@@ -53,7 +53,7 @@ Platform LearnHub menggunakan arsitektur modular yang memisahkan frontend dan ba
 
 ### Backend
 - **Bahasa:** Go 1.22
-- **Framework HTTP:** Gin / Echo
+- **Framework HTTP:** Echo v4
 - **Database / ORM:** PostgreSQL 16 dengan sqlc + pgx
 - **Authentication:** JWT (golang-jwt) + bcrypt
 - **Task Queue:** Asynq (Redis-based)
@@ -77,6 +77,9 @@ Platform LearnHub menggunakan arsitektur modular yang memisahkan frontend dan ba
 - **Enrollment API (`/api/v1/enrollments/*` & `/api/v1/lessons/*`):** Pendaftaran kursus dan update progres belajar.
 - **Payment API (`/api/v1/payments/*`):** Checkout transaksi dan webhook dari gateway pembayaran.
 - **Admin API (`/api/v1/admin/*`):** Dashboard analitik, moderasi kursus, manajemen user.
+- **Code Exercise API (`/api/v1/exercises/*`):** Daftar/detail soal, menjalankan submission pada runner terisolasi, dan membuka hint bertingkat.
+
+Eksekusi kode learner harus berjalan pada runner ephemeral terisolasi, terpisah dari proses API, tanpa akses jaringan, secret, database aplikasi, atau filesystem host, dan dengan batas CPU, memori, waktu, output, serta concurrency.
 
 ## 5. Non-Functional Requirements (NFR)
 - **Performa:** P95 response time ≤ 200ms, Web TTI ≤ 3 detik.

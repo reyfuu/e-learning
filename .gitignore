@@ -1,3 +1,18 @@
 # ignore embedded git backups
 backend/.git.bak/
 frontend-app/.git.bak/
+apps/api/.git.bak/
+apps/web/.git.bak/
+
+# Dependencies and build output
+node_modules/
+apps/web/.next/
+apps/api/bin/
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+apps/web/.env.local
+apps/api/.env

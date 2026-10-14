@@ -1,72 +1,28 @@
-# Setup Learn Platform
-
-Semua kode ada di folder **`apps/`** (satu-satunya folder proyek di root repo).
+# Setup LearnHub
 
 ## Struktur
 
-```
-learn-platform/          # root repo (hanya apps/ + README singkat)
-└── apps/
-    ├── backend/         # Go API — Echo, GORM, PostgreSQL
-    ├── frontend/        # React + Vite
-    ├── docker-compose.yml
-    ├── Makefile
-    ├── docs/
-    └── scripts/
-```
+    learn-2/
+    ├── apps/web/   # Next.js, dikelola pnpm dan dideploy ke Vercel
+    ├── apps/api/   # Go API, dikelola Go modules dan dideploy sebagai container
+    ├── docs/       # Dokumen produk dan teknis
+    └── package.json / pnpm-workspace.yaml
 
-## PostgreSQL
+## Prasyarat
 
-| Item     | Nilai            |
-| -------- | ---------------- |
-| User     | `audi`           |
-| Password | `090393`         |
-| Database | `learn_platform` |
+- Node.js versi yang didukung Next.js dan pnpm 10
+- Go 1.22+
+- PostgreSQL sesuai konfigurasi backend
 
-```
-postgres://audi:090393@localhost:5432/learn_platform?sslmode=disable
-```
+## Instalasi dan development
 
-```bash
-cd apps
-make db-setup-local   # PostgreSQL di mesin lokal
-make db-docker        # PostgreSQL via Docker
-make db-psql          # shell: psql -U audi -d postgres
-```
+    pnpm install
+    cp apps/api/.env.example apps/api/.env
+    pnpm dev
+    pnpm api:dev
 
-Atau langsung:
+Sesuaikan DATABASE_URL dan JWT_SECRET di apps/api/.env. Jalankan web dan API di terminal terpisah. pnpm dev:all menjalankan keduanya bersama-sama. API memerlukan PostgreSQL aktif.
 
-```bash
-psql -U audi -d postgres
-```
+## Vercel
 
-Untuk database aplikasi (`learn_platform`):
-
-```bash
-psql -U audi -d learn_platform
-```
-
-## Menjalankan
-
-```bash
-cd apps
-make setup
-make backend-dev    # http://localhost:8080/health
-make frontend-dev   # http://localhost:3000
-```
-
-## Environment
-
-| File | Variabel |
-| ---- | -------- |
-| `backend/.env` | `DATABASE_URL`, `JWT_SECRET`, `CORS_ORIGIN` |
-| `frontend/.env.local` | `VITE_API_URL` |
-
-## API
-
-| Method | Path |
-| ------ | ---- |
-| GET | `/health` |
-| POST | `/api/v1/auth/register` |
-| POST | `/api/v1/auth/login` |
-| GET | `/api/v1/users/me` |
+Hubungkan repository ke Vercel, pilih Root Directory apps/web, dan set environment URL API untuk setiap environment. Go API tidak berjalan sebagai proses Go jangka panjang di Vercel; deploy API sebagai container terpisah.

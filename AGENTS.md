@@ -28,3 +28,14 @@ Anda adalah AI Assistant yang membantu pengembangan platform e-learning **LearnH
 - Saat menulis kode, berikan komentar yang bermakna.
 - Berikan saran yang mengutamakan keamanan (mis. pencegahan SQL Injection, penggunaan token JWT yang aman).
 - Jika spesifikasi tidak jelas atau bertentangan dengan PRD, selalu tanya pengguna (Developer) untuk klarifikasi sebelum membuat asumsi besar.
+
+@RTK.md
+
+## Tooling dan Workflow
+- Gunakan Ponytail untuk menjaga perubahan sesingkat mungkin, tetap lengkap, dan mengikuti pola repo.
+- Gunakan Superpowers saat alur kerja yang relevan diperlukan, termasuk brainstorming, debugging sistematis, dan verifikasi.
+- Gunakan Graphify (`gsd-graphify`) untuk membangun atau menelusuri graph konteks codebase saat dibutuhkan.
+- Gunakan Context7 untuk mencari dokumentasi library/framework yang mutakhir.
+- Gunakan Chrome DevTools untuk inspeksi dan debugging browser saat tugas menyentuh perilaku web.
+- Gunakan Claude in Chrome untuk tugas browser yang membutuhkan kontrol atau inspeksi melalui ekstensi tersebut.
+- Jalankan perintah terminal melalui `rtk` sesuai `/home/reyfuu/.codex/RTK.md`.
