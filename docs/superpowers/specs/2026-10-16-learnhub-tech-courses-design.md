@@ -1,7 +1,7 @@
 # LearnHub technology courses design
 
 Date: 2026-10-16
-Status: awaiting user review
+Status: approved by user; implementation plan awaiting review
 
 ## Goal
 
@@ -33,6 +33,7 @@ The seed command reads the checked-in catalog and inserts missing records into P
 - Stable slugs make seeding repeatable. Existing records are never updated or deleted by the seed command.
 - No sample user, password, or credential is created.
 - Draft courses stay out of the catalog. Seeded courses are free, so the published lesson text is accessible to authenticated learners.
+- Non-owner learners can read lesson text only for published courses; instructors can still read their own drafts.
 - Existing `modules` response fields and progress behavior remain compatible; lesson content and course description are additive fields.
 - If no production API URL or instructor account is available, course content can be prepared in source but cannot be truthfully reported as live.
 
