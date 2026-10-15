@@ -15,13 +15,10 @@ export default function CoursesPage() {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        let data;
         if (user?.role === "instructor") {
-          data = await courseApi.list();
-          setCourses(data.courses || data || []);
+          setCourses(await courseApi.list());
         } else {
-          data = await courseApi.enrolled();
-          setCourses(data || []);
+          setCourses(await courseApi.enrolled());
         }
       } catch (err) {
         console.error("Failed to fetch courses:", err);

@@ -70,11 +70,37 @@ export const userApi = {
 };
 
 // ─── Courses ─────────────────────────────────────────────────────────────────
+export interface CourseLesson {
+  id: string;
+  title: string;
+  section_title: string;
+  content_type: string;
+  content: string | null;
+  is_completed: boolean;
+  duration: string;
+}
+
+export interface CourseSummary {
+  id: string;
+  title: string;
+  description: string;
+  link?: string;
+  status: string;
+  total_modules: number;
+  progress: number;
+}
+
+export interface CourseResponse extends CourseSummary {
+  icon?: string;
+  completed_modules: number;
+  modules: CourseLesson[];
+}
+
 export const courseApi = {
-  list: () => api.get("/courses").then((r) => r.data),
-  catalog: () => api.get("/courses/catalog").then((r) => r.data),
-  enrolled: () => api.get("/courses/enrolled").then((r) => r.data),
-  get: (id: string) => api.get(`/courses/${id}`).then((r) => r.data),
+  list: () => api.get<CourseResponse[]>("/courses").then((r) => r.data),
+  catalog: () => api.get<CourseSummary[]>("/courses/catalog").then((r) => r.data),
+  enrolled: () => api.get<CourseResponse[]>("/courses/enrolled").then((r) => r.data),
+  get: (id: string) => api.get<CourseResponse>(`/courses/${id}`).then((r) => r.data),
   create: (data: { title: string; link?: string; icon?: string }) =>
     api.post("/courses", data).then((r) => r.data),
   enroll: (id: string) => api.post(`/courses/${id}/enroll`, {}).then((r) => r.data),

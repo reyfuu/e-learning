@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { courseApi } from "@/lib/api";
+import { courseApi, type CourseLesson, type CourseResponse } from "@/lib/api";
 import { useAuthStore } from "@/store/auth";
 import {
   ArrowLeft,
@@ -17,25 +17,8 @@ import {
   Layers,
 } from "lucide-react";
 
-interface Module {
-  id: string;
-  title: string;
-  is_completed: boolean;
-  duration: string;
-  link?: string;
-}
-
-interface Course {
-  id: string;
-  title: string;
-  link?: string;
-  icon?: string;
-  status: string;
-  progress: number;
-  total_modules: number;
-  completed_modules: number;
-  modules: Module[];
-}
+type Module = CourseLesson;
+type Course = CourseResponse;
 
 export default function CourseDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -48,11 +31,13 @@ export default function CourseDetailPage() {
   const [newModuleTitle, setNewModuleTitle] = useState("");
   const [showAddForm, setShowAddForm] = useState(false);
   const [toggling, setToggling] = useState<string | null>(null);
+  const [selectedLessonId, setSelectedLessonId] = useState<string | null>(null);
 
   const fetchCourse = async () => {
     try {
       const data = await courseApi.get(id);
       setCourse(data);
+      setSelectedLessonId((selected) => selected ?? data.modules[0]?.id ?? null);
     } catch {
       setError("Could not load course. Please try again.");
     } finally {
@@ -118,6 +103,14 @@ export default function CourseDetailPage() {
   }
 
   const isInstructor = user?.role === "instructor";
+  const selectedLesson = course.modules.find((module) => module.id === selectedLessonId);
+  const sections = Array.from(
+    course.modules.reduce((groups, module) => {
+      const title = module.section_title || "Materi";
+      groups.set(title, [...(groups.get(title) ?? []), module]);
+      return groups;
+    }, new Map<string, Module[]>())
+  );
 
   return (
     <div className="max-w-4xl mx-auto space-y-6">
@@ -151,6 +144,7 @@ export default function CourseDetailPage() {
             </span>
 
             <h1 className="text-3xl font-bold text-white leading-tight">{course.title}</h1>
+            {course.description && <p className="max-w-2xl text-sm leading-relaxed text-slate-300">{course.description}</p>}
 
             {course.link && (
               <a
@@ -168,7 +162,7 @@ export default function CourseDetailPage() {
             <div className="flex flex-wrap gap-4 pt-2 text-sm text-slate-400">
               <div className="flex items-center gap-1.5">
                 <Layers className="w-4 h-4 text-indigo-400" />
-                <span>{course.total_modules} Sections</span>
+                <span>{course.total_modules} Lessons</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
@@ -222,7 +216,7 @@ export default function CourseDetailPage() {
       {/* Sections / Modules */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold text-white">Sections</h2>
+          <h2 className="text-lg font-semibold text-white">Lessons</h2>
           {isInstructor && (
             <button
               onClick={() => setShowAddForm((v) => !v)}
@@ -279,66 +273,34 @@ export default function CourseDetailPage() {
             )}
           </div>
         ) : (
-          <div className="space-y-3">
-            {course.modules.map((module, index) => (
-              <div
-                key={module.id}
-                className={`group flex items-center gap-4 p-4 rounded-2xl border transition-all ${
-                  module.is_completed
-                    ? "bg-emerald-500/5 border-emerald-500/20"
-                    : "bg-slate-900/60 border-slate-800 hover:border-slate-700"
-                }`}
-              >
-                {/* Toggle completion */}
-                <button
-                  onClick={() => handleToggle(module.id)}
-                  disabled={toggling === module.id}
-                  className="shrink-0 text-slate-500 hover:text-indigo-400 transition-colors"
-                  title={module.is_completed ? "Mark as incomplete" : "Mark as complete"}
-                >
-                  {toggling === module.id ? (
-                    <Loader2 className="w-5 h-5 animate-spin text-indigo-400" />
-                  ) : module.is_completed ? (
-                    <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-                  ) : (
-                    <Circle className="w-5 h-5" />
-                  )}
-                </button>
-
-                {/* Index */}
-                <span className="shrink-0 text-xs font-bold text-slate-600 w-5 text-center">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-
-                {/* Content */}
-                <div className="flex-1 min-w-0">
-                  <p className={`text-sm font-medium truncate ${
-                    module.is_completed ? "text-slate-400 line-through" : "text-slate-100"
-                  }`}>
-                    {module.title}
-                  </p>
-                  <div className="flex items-center gap-3 mt-0.5">
-                    <span className="text-xs text-slate-500 flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
-                      {module.duration}
-                    </span>
+          <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]">
+            <div className="space-y-4">
+              {sections.map(([sectionTitle, modules]) => (
+                <section key={sectionTitle} className="rounded-2xl border border-slate-800 bg-slate-900/40 p-4">
+                  <h3 className="mb-3 text-sm font-semibold text-slate-300">{sectionTitle}</h3>
+                  <div className="space-y-2">
+                    {modules.map((module) => (
+                      <div key={module.id} className={`flex items-center gap-2 rounded-xl border p-2 ${selectedLessonId === module.id ? "border-indigo-500/40 bg-indigo-500/10" : "border-transparent"}`}>
+                        <button type="button" onClick={() => setSelectedLessonId(module.id)} aria-pressed={selectedLessonId === module.id} className="min-w-0 flex-1 rounded-lg px-2 py-2 text-left text-sm text-slate-100 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400">
+                          <span className="block truncate">{module.title}</span>
+                          <span className="mt-1 flex items-center gap-1 text-xs text-slate-500"><Clock className="h-3 w-3" />{module.duration}</span>
+                        </button>
+                        <button type="button" onClick={() => handleToggle(module.id)} disabled={toggling === module.id} aria-label={module.is_completed ? `Mark ${module.title} incomplete` : `Mark ${module.title} complete`} className="shrink-0 rounded-lg p-2 text-slate-500 hover:text-indigo-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400">
+                          {toggling === module.id ? <Loader2 className="h-5 w-5 animate-spin text-indigo-400" /> : module.is_completed ? <CheckCircle2 className="h-5 w-5 text-emerald-400" /> : <Circle className="h-5 w-5" />}
+                        </button>
+                      </div>
+                    ))}
                   </div>
-                </div>
-
-                {/* External link */}
-                {module.link && (
-                  <a
-                    href={module.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 p-2 rounded-lg text-slate-500 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all"
-                    title="Open resource"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                )}
-              </div>
-            ))}
+                </section>
+              ))}
+            </div>
+            <article className="min-h-64 rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+              {selectedLesson ? <>
+                <p className="text-xs font-semibold uppercase tracking-wide text-indigo-300">{selectedLesson.section_title}</p>
+                <h3 className="mt-2 text-xl font-semibold text-white">{selectedLesson.title}</h3>
+                <p className="mt-5 whitespace-pre-wrap text-sm leading-7 text-slate-300">{selectedLesson.content || "Materi untuk pelajaran ini belum tersedia."}</p>
+              </> : <p className="text-sm text-slate-400">Pilih pelajaran untuk membaca materinya.</p>}
+            </article>
           </div>
         )}
       </div>

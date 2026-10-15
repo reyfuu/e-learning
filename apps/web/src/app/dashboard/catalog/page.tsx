@@ -2,17 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { courseApi } from "@/lib/api";
+import { courseApi, type CourseSummary } from "@/lib/api";
 import { BookOpen, Clock, Layers, Search, UserRound, Loader2, CheckCircle2 } from "lucide-react";
 
-interface Course {
-  id: string;
-  title: string;
-  link?: string; // holds instructor name from API
-  status: string;
-  total_modules: number;
-  progress: number;
-}
+type Course = CourseSummary;
 
 export default function CatalogPage() {
   const [courses, setCourses] = useState<Course[]>([]);
@@ -29,7 +22,7 @@ export default function CatalogPage() {
           courseApi.enrolled(),
         ]);
         setCourses(catalog);
-        setEnrolledIds(new Set((enrolled as Course[]).map((c) => c.id)));
+        setEnrolledIds(new Set(enrolled.map((c) => c.id)));
       } catch (err) {
         console.error(err);
       } finally {
@@ -139,9 +132,11 @@ export default function CatalogPage() {
                     )}
                     <div className="flex items-center gap-1.5 shrink-0">
                       <Layers className="w-3.5 h-3.5 text-sky-400" />
-                      <span>{course.total_modules} sections</span>
+                      <span>{course.total_modules} lessons</span>
                     </div>
                   </div>
+
+                  {course.description && <p className="line-clamp-3 text-sm leading-relaxed text-slate-400">{course.description}</p>}
 
                   <div className="mt-auto flex gap-2">
                     {isEnrolled ? (

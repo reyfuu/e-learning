@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/google/uuid"
+	"gorm.io/gorm"
 	"learn-platform/backend/internal/model"
 	"learn-platform/backend/internal/repository"
 )
@@ -32,14 +33,14 @@ func (s *CourseService) CreateCourse(ctx context.Context, userID string, req *mo
 
 	courseID := uuid.New().String()
 	course := &model.Course{
-		ID:        courseID,
-		UserID:    userID,
-		Title:     req.Title,
-		Link:      req.Link,
-		Icon:      req.Icon,
-		Status:    "learning",
-		Slug:      slugify(req.Title) + "-" + courseID[:8],
-		Language:  "id",
+		ID:       courseID,
+		UserID:   userID,
+		Title:    req.Title,
+		Link:     req.Link,
+		Icon:     req.Icon,
+		Status:   "learning",
+		Slug:     slugify(req.Title) + "-" + courseID[:8],
+		Language: "id",
 	}
 
 	if course.Icon == "" {
@@ -63,7 +64,7 @@ func (s *CourseService) GetUserCourses(ctx context.Context, userID string) ([]mo
 	for _, c := range courses {
 		responses = append(responses, *s.mapCourseToResponse(ctx, &c, userID))
 	}
-	
+
 	if responses == nil {
 		responses = make([]model.CourseResponse, 0)
 	}
@@ -71,8 +72,14 @@ func (s *CourseService) GetUserCourses(ctx context.Context, userID string) ([]mo
 }
 
 func (s *CourseService) GetCourse(ctx context.Context, courseID string, userID string) (*model.CourseResponse, error) {
-	// Try owned course first; fall back to public (enrolled students)
-	course, err := s.repo.GetCourseByIDPublic(ctx, courseID)
+	course, err := s.repo.GetCourseByID(ctx, courseID, userID)
+	if err == nil {
+		return s.mapCourseToResponse(ctx, course, userID), nil
+	}
+	if !errors.Is(err, gorm.ErrRecordNotFound) {
+		return nil, err
+	}
+	course, err = s.repo.GetCourseByIDPublic(ctx, courseID)
 	if err != nil {
 		return nil, errors.New("course not found")
 	}
@@ -90,6 +97,7 @@ func (s *CourseService) GetAllCourses(ctx context.Context) ([]model.CourseRespon
 		resp := model.CourseResponse{
 			ID:           c.ID,
 			Title:        c.Title,
+			Description:  c.Description,
 			Status:       c.Status,
 			TotalModules: 0,
 		}
@@ -138,7 +146,6 @@ func (s *CourseService) GetEnrolledCourses(ctx context.Context, userID string) (
 	}
 	return responses, nil
 }
-
 
 func (s *CourseService) CreateModule(ctx context.Context, userID string, courseID string, req *model.CreateModuleRequest) (*model.ModuleResponse, error) {
 	if req.Title == "" {
@@ -213,7 +220,19 @@ func (s *CourseService) ToggleModuleCompletion(ctx context.Context, userID strin
 
 	_, err = s.repo.GetCourseByID(ctx, section.CourseID, userID)
 	if err != nil {
-		return nil, errors.New("unauthorized to modify this lesson")
+		if !errors.Is(err, gorm.ErrRecordNotFound) {
+			return nil, err
+		}
+		if _, err := s.repo.GetCourseByIDPublic(ctx, section.CourseID); err != nil {
+			return nil, errors.New("unauthorized to modify this lesson")
+		}
+		enrolled, err := s.repo.IsEnrolled(ctx, userID, section.CourseID)
+		if err != nil {
+			return nil, err
+		}
+		if !enrolled {
+			return nil, errors.New("unauthorized to modify this lesson")
+		}
 	}
 
 	progress, err := s.repo.GetLessonProgress(ctx, userID, lessonID)
@@ -295,10 +314,13 @@ func (s *CourseService) mapCourseToResponse(ctx context.Context, c *model.Course
 				durStr = fmt.Sprintf("%d min", l.Duration/60)
 			}
 			moduleResponses = append(moduleResponses, model.ModuleResponse{
-				ID:          l.ID,
-				Title:       l.Title,
-				IsCompleted: isComp,
-				Duration:    durStr,
+				ID:           l.ID,
+				Title:        l.Title,
+				SectionTitle: sec.Title,
+				ContentType:  l.ContentType,
+				Content:      l.Content,
+				IsCompleted:  isComp,
+				Duration:     durStr,
 			})
 		}
 	}
@@ -316,6 +338,7 @@ func (s *CourseService) mapCourseToResponse(ctx context.Context, c *model.Course
 	return &model.CourseResponse{
 		ID:               c.ID,
 		Title:            c.Title,
+		Description:      c.Description,
 		Link:             c.Link,
 		Icon:             c.Icon,
 		Status:           c.Status,

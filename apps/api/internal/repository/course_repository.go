@@ -144,6 +144,7 @@ func (r *CourseRepository) GetAllPublishedCourses(ctx context.Context) ([]model.
 			return db.Order("position ASC")
 		}).
 		Preload("Instructor").
+		Where("courses.status = ?", "published").
 		Find(&courses).Error
 	return courses, err
 }
@@ -159,7 +160,7 @@ func (r *CourseRepository) GetCourseByIDPublic(ctx context.Context, id string) (
 			return db.Order("position ASC")
 		}).
 		Preload("Instructor").
-		First(&course, "id = ?", id).Error
+		First(&course, "id = ? AND status = ?", id, "published").Error
 	if err != nil {
 		return nil, err
 	}
@@ -196,4 +197,3 @@ func (r *CourseRepository) GetEnrolledCourses(ctx context.Context, userID string
 		Find(&courses).Error
 	return courses, err
 }
-
