@@ -57,8 +57,8 @@ func Catalog() ([]CourseSpec, error) {
 }
 
 func validate(courses []CourseSpec) error {
-	if len(courses) != 21 {
-		return fmt.Errorf("catalog must contain exactly 21 courses; got %d", len(courses))
+	if len(courses) != 56 {
+		return fmt.Errorf("catalog must contain exactly 56 courses; got %d", len(courses))
 	}
 	slugs := make(map[string]bool, len(courses))
 	for _, course := range courses {

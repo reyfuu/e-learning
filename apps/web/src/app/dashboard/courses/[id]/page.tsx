@@ -298,7 +298,17 @@ export default function CourseDetailPage() {
               {selectedLesson ? <>
                 <p className="text-xs font-semibold uppercase tracking-wide text-indigo-300">{selectedLesson.section_title}</p>
                 <h3 className="mt-2 text-xl font-semibold text-white">{selectedLesson.title}</h3>
-                <p className="mt-5 whitespace-pre-wrap text-sm leading-7 text-slate-300">{selectedLesson.content || "Materi untuk pelajaran ini belum tersedia."}</p>
+                <div className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
+                  {(selectedLesson.content || "Materi untuk pelajaran ini belum tersedia.").split(/(```[\s\S]*?```)/g).map((part, idx) =>
+                    part.startsWith("```") && part.endsWith("```") ? (
+                      <pre key={idx} className="overflow-x-auto rounded-xl border border-slate-800 bg-slate-950/90 p-4 font-mono text-xs leading-6 text-slate-200">
+                        <code>{part.replace(/^```[^\n]*\n?/, "").replace(/\n?```$/, "")}</code>
+                      </pre>
+                    ) : (
+                      part.trim() && <p key={idx} className="whitespace-pre-wrap">{part.trim()}</p>
+                    )
+                  )}
+                </div>
               </> : <p className="text-sm text-slate-400">Pilih pelajaran untuk membaca materinya.</p>}
             </article>
           </div>

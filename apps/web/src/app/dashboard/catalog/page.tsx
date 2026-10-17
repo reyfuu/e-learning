@@ -46,6 +46,7 @@ export default function CatalogPage() {
 
   const filtered = courses.filter((c) =>
     c.title.toLowerCase().includes(search.toLowerCase()) ||
+    (c.description || "").toLowerCase().includes(search.toLowerCase()) ||
     (c.link || "").toLowerCase().includes(search.toLowerCase())
   );
 
